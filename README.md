@@ -60,7 +60,8 @@ o Contenu présent sur le site
 - Choisir une convention de nommage, un vocabulaire facile à comprendre pour toutes les personnes impliquées où qui le seront à l’avenir.
 - Définir la charte graphique comme l’exemple ci-dessous
 
-![Design System](/photos/design%20system.png)
+
+![Design System](design/design_system.png)
 
   
 **Itération #A.5 Maquetter le Header**
