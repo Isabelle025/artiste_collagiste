@@ -75,4 +75,55 @@ h2{
     font-size: 54px;    
 }
 
+.biography{
+    background-color: #2b2727;
+    width: 100vw;
+    height: 176vh;
+}
+
+.rubric_title{
+    color: #000000;
+    font-family: 'Permanent Marker', cursive; 
+    filter: drop-shadow(10px 10px 10px #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.number{
+    font-size: 16vh;
+}
+
+.text{
+    font-size: 6.7vh;
+}
+
+.container_biography{
+    display: grid;
+    height: 1200px;
+    flex-direction: row;
+}
+
+.birth, .beginning, .glory, .death{
+    color: #fefee2;
+}
+
+.date1, .date2, .date3, .date4{ 
+    font-size: 10vh;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.text1, .text2, .text3, .text4{
+    font-size: 3.3vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.portrait{
+    background-image : url(images/portrait.png);
+    width: 577px;
+    height: 433px;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
 
