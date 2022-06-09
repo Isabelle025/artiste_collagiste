@@ -15,13 +15,14 @@ body{
     height: 100vh;
 }
 
-.background{
+#div1{
     position: relative;
     background-image: url(images/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .bar1{
@@ -66,14 +67,12 @@ body{
     padding: 37vh 0rem 0rem 12vh;
 }
 
-.title{
+h1{
     font-size: 96px;
 }
 
-.subtitle1{
+h2{
     font-size: 54px;    
 }
 
-.subtitle2{
-    font-size: 54px;
-}
+
