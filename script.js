@@ -1,52 +1,32 @@
-//function changeDivImage()
-   // {
-        //var imgPath = new String();
-        //imgPath = document.getElementById("div1").style.backgroundImage;
+const date1 = document.querySelector('.date1')
+date1.onclick = function () {
+    show('.text1');
+}
 
-        //if(imgPath == "url(images/background.png)" || imgPath == "")
-        //{
-           // document.getElementById("div1").style.backgroundImage = "url(images/background.png)";
-        //}
-        //else
-        //{
-           // document.getElementById("div1").style.backgroundImage = "url(images/menu.jpg)";
-        //}
-    //}
+const date2 = document.querySelector('.date2')
+date2.onclick = function () {
+    show('.text2');
+}
 
-    
-    var els = document.getElementsByClassName("menu");
+const date3 = document.querySelector('.date3')
+date3.onclick = function () {
+    show('.text3');
+}
 
-    for (var i = 0; i < els.length; i++) {
-      // console.log(els[i].id);
-      els[i].addEventListener("click", function (event) {
-        changeBackground(this.id);
-      });
-    }
-    
-    function changeBackground(id) {
-      // document.querySelectorAll('[id^="background"]');
-      // var classes = console.log(document.querySelector("body").classList.length);
-      // clear all background classes from body
-      const cls = [
-        "background.png",
-        "affiche.jpg"
-      ];
-      document.querySelector("body").classList.remove(...cls);
-    
-      switch (id) {
-        case "books":
-          document.querySelector("body").classList.add("background-image-books");
-          break;
-        case "strawberries":
-          document
-            .querySelector("body")
-            .classList.add("background-image-strawberries");
-          break;
-        case "sea":
-          document.querySelector("body").classList.add("background-image-sea");
-          break;
-        default:
-          console.log("switch caught nothing");
-          break;
-      }
-    } 
+const date4 = document.querySelector('.date4')
+date4.onclick = function () {
+    show('.text4');
+}
+
+function show(bio) 
+	{
+		var text = document.querySelector(bio);
+ 
+        if (text.style.opacity == '1'){
+            text.style.opacity = ('0');
+        } else {
+            text.style.opacity = ('1');
+        }
+        
+	}
+ 
