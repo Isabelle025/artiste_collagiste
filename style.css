@@ -99,9 +99,15 @@ h2{
 }
 
 .container_biography{
-    display: grid;
-    height: 1200px;
-    flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        grid-template-rows: repeat(3,1fr);
+        background-image: url(images/portrait.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
 }
 
 .birth, .beginning, .glory, .death{
@@ -118,12 +124,27 @@ h2{
     font-family: 'Poppins', sans-serif;
 }
 
-.portrait{
-    background-image : url(images/portrait.png);
-    width: 577px;
-    height: 433px;
-    position: relative;
-    background-repeat: no-repeat;
+.birth{
+    grid-column: 1;
+    grid-row: 1;
 }
+
+.beginning{
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.glory{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row: 3;
+}
+
+.death{
+    grid-column: 7;
+    grid-row: 2;
+}
+
+
 
 
