@@ -62,7 +62,7 @@ body{
 /*survol des rubriques du menu*/
 .rubric1:hover, .rubric2:hover, .rubric3:hover, .rubric4:hover{
     width: 42vw;
-    height: 57.5vh;
+    height: 40vh;
     background-repeat: no-repeat;
     position: absolute;
     overflow: hidden;
@@ -284,11 +284,6 @@ h1{
 .death{
     grid-area: 2 / 7 / 4 / 8;
 }
-
-
-
-
-
 
 
 
