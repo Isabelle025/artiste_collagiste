@@ -12,7 +12,7 @@ body{
 .header{
     justify-content: center;
     width: 100vw;
-    height: 64rem;
+    height: 107.24vh;
 }
 
 /*entête principale*/
@@ -109,50 +109,49 @@ body{
 
 /*taille du chiffre des rubriques*/
 .nb{
-    font-size: 9.375rem;
+    font-size: 7.8vw;
 }
 
 /*taille des noms noms des rubriques*/
 .category{
-    font-size: 4rem;
+    font-size: 3.3vw;
 }
 
 /*barres du menu*/
 .bar1{
     background-color: #fefee2;
-    height: 1.5px;
-    width: 88px;
-    margin: 0rem 0rem .625rem 1.5625rem;
+    height: 0.16vh;
+    width: 4.6vw;
+    margin: 0 0 0.5vw 1.3vw;
 }
 
 .bar2{
     background-color: #fefee2;
-    height: 6px;
-    width: 60px;
-    margin-bottom: .625rem;
-    margin-left: 50px;
+    height: 0.6vh;
+    width: 3.1vw;
+    margin: 0 0 0.5vw 2.6vw;
 }
 
 .bar3{
     background-color: #fefee2;
-    height: 1.5px;
-    width: 110px;
-    margin-bottom: 10px;
+    height: 0.16vh;
+    width: 5.7vw;
+    margin-bottom: 0.5vw;
 }
 
 .bar4{
     background-color: #fefee2;
-    height: 8px;
-    width: 60px;
-    margin-left: 1.875rem;
+    height: 0.8vh;
+    width: 3.125vw;
+    margin-left: 1.6vw;
 }
 
 /*container du menu*/
 .menu{
-    width: 110px;
-    height: 76px;
+    width: 5.7vw;
+    height: 8vh;
     cursor: pointer;
-    padding: 3.3125rem 0rem 0rem 7.1875rem;
+    padding: 2.7vw 0 0 6vw;
 }
 
 /*bloc nom de l'artiste*/
@@ -177,11 +176,11 @@ h1{
 
 /*margin pour coller les subtitles*/
 .subtitle1{ 
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .subtitle2{
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 /*couleur de fond et dimensiosn de la partie biographie*/
@@ -199,7 +198,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-right: 3.125rem;
+    margin-right: 2.6vw;
 }
 
 /*tialle chiffre du titre de la partie*/
@@ -267,7 +266,7 @@ h1{
 /*emplacement du premier bloc dans la grid*/
 .birth{
     grid-area:  1 / 1 / 3 / 2;  
-    margin-left : 50px;
+    margin-left : 2.6vw;
 }
 
 /*emplacement du bloc avec la deuxième date dans la grid*/
