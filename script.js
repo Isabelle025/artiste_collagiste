@@ -19,7 +19,7 @@ function nav(entry)
             
         }
 
-/*partie pour la gallerie des oeuvres
+/*partie pour la gallerie des oeuvres*/
         const panels=document.querySelectorAll('.panel')
         panels.forEach((panel)=>{//loop on every cards
             console.log(panel)
@@ -32,4 +32,4 @@ function nav(entry)
             panels.forEach((panel)=>{//when i click in other cards i remove active class on the others panel
                 panel.classList.remove("active")
             })
-        }*/
+        }
