@@ -1,6 +1,7 @@
 body{
     box-sizing: border-box;
     margin: 0;
+
 }
 
 .container{
@@ -187,7 +188,7 @@ h1{
 .biography{
     background-color: #2b2727;
     width: 100vw;
-    height: 176vh;
+    height: 100vh;
 }
 
 /*taille et dimmensions du titre de la partie biographie*/
@@ -201,7 +202,7 @@ h1{
     margin-right: 2.6vw;
 }
 
-/*tialle chiffre du titre de la partie*/
+/*taille chiffre du titre de la partie*/
 .number{
     font-size: 16vh;
 }
@@ -284,5 +285,33 @@ h1{
     grid-area: 2 / 7 / 4 / 8;
 }
 
+.rubric2_title{
+    color: #000000;
+    font-family: 'Permanent Marker', cursive; 
+    filter: drop-shadow(10px 10px 10px #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 2.6vw;
+    padding-top: 5.2vw;
+    padding-bottom: 2.6vw;
+}
 
+/*tialle chiffre du titre de la partie*/
+.number2{
+    font-size: 16vh;
+}
+
+/*taille du texte du titre de la partie*/
+.text2bis{
+    font-size: 6.7vh;
+}
+
+/*couleur de fond et dimensiosn de la partie biographie*/
+.gallery{
+    background-color: #2b2727;
+    width: 100vw;
+    height: 100vh;
+
+}
 
