@@ -307,7 +307,7 @@ h1{
 .text2bis{
     font-size: 6.7vh;
 }
-
+/*
 /*couleur de fond et dimensiosn de la partie biographie*/
 .gallery{
     background-color: #2b2727;
@@ -343,7 +343,7 @@ h1{
     margin:0;
     opacity:0;
     width: 23.5vw;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Bowlby One SC', cursive;
 }
 
 .panel p{
@@ -353,13 +353,15 @@ h1{
     left:0;
     margin:0;
     opacity:0;
-    width: 100vw;
+    width: 23.5vw;
+    font-family: 'Bowlby One SC', cursive;
 }
 
 .panel.active{
     flex:1;
     opacity: 1;
 }
+
 
 .panel.active h3{
     opacity:1;

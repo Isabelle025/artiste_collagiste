@@ -33,3 +33,5 @@ function nav(entry)
                 panel.classList.remove("active")
             })
         }
+
+        
