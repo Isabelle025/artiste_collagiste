@@ -106,7 +106,6 @@ body{
 .rubric4:hover{
     color: #177026;
     background-image: url(images/brush_black.png);
-
 }
 
 /*taille du chiffre des rubriques*/
@@ -164,6 +163,7 @@ body{
     flex-direction: column;
     margin-left: 12.04vh;
     margin-top: 15.7vh;
+    letter-spacing: 2px;
 }
 
 /*taille nom de l'artiste*/
@@ -199,8 +199,8 @@ h1{
     filter: drop-shadow(10px 10px 10px #ffffff);
     display: flex;
     align-items: center;
-    justify-content: end;
-    margin-right: 2.6vw;
+    justify-content: start;
+    margin-left: 2.6vw;
 }
 
 /*taille chiffre du titre de la partie*/
@@ -344,6 +344,7 @@ h1{
     opacity:0;
     width: 23.5vw;
     font-family: 'Bowlby One SC', cursive;
+    letter-spacing: 2px;
 }
 
 .panel p{
@@ -520,36 +521,9 @@ h1{
     background-position: center;
 }
 
-/*.slider-container button{
-    position: absolute;
-    left: 35%;
-    top: 50%;
-    font-size: 1.5rem;
-    padding: 12px;
-    border: none;
-    cursor: pointer;
-    color: #fff;
-    background-color: #444;
-}*/
-
-button:hover{
-    opacity: 0.9;
-}
-
 button:focus{
     outline: none;
 }
-
-/*.slider-container .left-btn{
-    transform: translateX(-100%);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-.slider-container .right-btn{
-    transform: translateY(-100%);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}*/
 
 .prev{
     cursor: pointer;
@@ -566,9 +540,9 @@ button:focus{
     font-size: 5.2vw;
     background-color: #fefee2;
     transition: background-color 0.6s ease;
-  }
+}
 
-  .next{
+.next{
     cursor: pointer;
     position: absolute;        
     top: 40%;
@@ -582,15 +556,243 @@ button:focus{
     color: black;
     font-size: 5.2vw;
     background-color: #fefee2;
-    transition: background-color 0.6s ease;
-    
-  }
+    transition: background-color 0.6s ease;   
+}
 
-  .prev{  left: 35.4vw; }
+.prev{  left: 35.4vw; }
 
-  .next { right: 65.1vw; }
+.next { right: 65.1vw; }
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.5);
   color: #fefee2;
+}
+
+/*footer*/
+
+.footer{
+    background-color: #2b2b2b;
+    width: 100%;
+    height: 100%;
+}
+
+.rubric_title4{
+    color: #000000;
+    font-family: 'Permanent Marker', cursive; 
+    filter: drop-shadow(10px 10px 10px #ffffff);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 2.5rem;
+}
+
+/*taille chiffre du titre de la partie*/
+.nb4{
+    font-size: 16vh;
+}
+
+/*taille du texte du titre de la partie*/
+.text4bis{
+    font-size: 6.7vh;
+}
+
+/*container principal du footer*/
+.content_contact{
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    gap:20%;
+}
+
+/*partie gauche du footer*/
+.left{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+/*blazon*/
+.logo{
+    position: absolute;
+    z-index: 1;
+}
+
+/*fond flouté derrière le blazon*/
+.background_radius{
+    height: 52.3vh; 
+	width: 26vw; 
+    background: radial-gradient(50% 50% at 50% 50%, rgba(217, 217, 217, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
+    position: relative;
+}
+
+/*partie droite du footer*/
+.right{
+    color: #fefee2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4.375rem;
+}
+
+/*partie en haut à droite avec la newsletter*/
+.news_mail{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+/*barre pour inscription à la newsletter*/
+.validation{
+    height: 2.5rem; 
+    display: flex;
+    justify-content: space-between;
+}
+
+/*partie de la barre dans laquelle on saisit le mail*/
+input{
+    border: none;
+    background-color: #fefee2;
+    border-radius: 16px 0 0 16px;
+    display: flex;
+    width:100%;
+}
+
+/*bouton ok pour valider*/
+button{
+    border: none;
+    border-left:1px solid black;
+    background-color: #fefee2;
+    text-align: center;
+    border-radius: 0 16px 16px 0;
+    width:15%;
+    cursor: pointer;
+}
+
+/*changement de couleur du bouton lors du survol*/
+button:hover{
+    background-color: #2b2b2b;
+    color: #fefee2;
+    border: 1px solid #fefee2;
+}
+
+/*police et taille du texte dans la barre d'inscription*/
+input::placeholder{
+    text-align: start;
+    text-indent: 15px;
+    vertical-align: middle;
+    background-color: #fefee2;
+}
+
+/*texte au-dessus des média sociaux*/
+.merejoindre{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*tout le bloc des médias sociaux*/
+.social_media{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 60px;
+}
+
+/*image logo Facebook*/
+.facebook1{
+    position: relative;
+    top: -28px;
+}
+
+/*taille de l'image après changement*/
+.facebook > a{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+/*emplacement de l'image après changement*/
+.facebook1 > a > img{
+    width:100%;
+    height: auto;
+    position: relative;
+    top: 45px;
+}
+
+.facebook > :hover > img{
+    top: 33px;
+}
+
+.Insta{
+    position: relative;
+    top: -25px;
+}
+
+.instagram > a{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+.Insta > a > img{
+    width:100%;
+    height: auto;
+    position: relative;
+    top: 50px;
+}
+
+.instagram > :hover > img{
+    top: 32px;
+}
+
+.pint{
+    position: relative;
+    top: -26px;
+}
+
+.pinterest > a{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+
+.pint > a > img{
+    width:100%;
+    height: auto;
+    position: relative;
+    top: 50px;
+}
+
+.pinterest > :hover > img{
+    top: 32px;
+}
+
+.DA{
+    position: relative;
+    top: -27px;
+}
+
+.deviant_art > a{
+    width: 60px;
+    height: 60px;
+    margin: 0;
+}
+
+.DA > a > img{
+    width:100%;
+    height: auto;
+    position: relative;
+    top: 45px;
+}
+
+.deviant_art > :hover > img{
+    top: 33px;
 }

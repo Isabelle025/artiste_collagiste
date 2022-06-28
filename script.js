@@ -21,20 +21,20 @@ function nav(entry)
 
 /*partie pour la gallerie des oeuvres*/
         const panels=document.querySelectorAll('.panel')
-        panels.forEach((panel)=>{//loop on every cards
+        panels.forEach((panel)=>{//loop 
             console.log(panel)
-          panel.addEventListener("click",()=>{//add a click event
+          panel.addEventListener("click",()=>{//ajout du click
             removeActiveClasses()
-            panel.classList.add("active");//when i click i add a class style 'active '
+            panel.classList.add("active");//quand je clique j'ajoute une classe 'active
           })//
         })
         function removeActiveClasses(){
-            panels.forEach((panel)=>{//when i click in other cards i remove active class on the others panel
+            panels.forEach((panel)=>{//quand je clique j'enlève le loop
                 panel.classList.remove("active")
             })
         }
 
-// Script Goes Here...
+// début du script
 const leftSlide = document.querySelector(".left-slides");
 const rightSlide = document.querySelector(".right-slides");
 const leftBtn = document.querySelector(".left-btn");
