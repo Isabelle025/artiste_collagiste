@@ -8,40 +8,54 @@ menu.onclick = function () {
     }
     
 function nav(entry) 
-        {
-            var text = document.querySelector(entry);
-     
-            if (text.style.display == 'grid'){
-                text.style.display = ('unset');
-            } else {
-                text.style.display = ('grid');
-            }
-            
-        }
+    {
+        var text = document.querySelector(entry);
 
-/*partie pour la gallerie des oeuvres*/
-        const panels=document.querySelectorAll('.panel')
-        panels.forEach((panel)=>{//loop 
-            console.log(panel)
-          panel.addEventListener("click",()=>{//ajout du click
-            removeActiveClasses()
-            panel.classList.add("active");//quand je clique j'ajoute une classe 'active
-          })//
-        })
-        function removeActiveClasses(){
-            panels.forEach((panel)=>{//quand je clique j'enlève le loop
-                panel.classList.remove("active")
-            })
+        if (text.style.display == 'grid'){
+            text.style.display = ('unset');
+        } else {
+            text.style.display = ('grid');
         }
+        
+    }
 
-// début du script
+//carrousel des oeuvres//
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("bloc_image");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+// slide des expos
 const leftSlide = document.querySelector(".left-slides");
 const rightSlide = document.querySelector(".right-slides");
 const leftBtn = document.querySelector(".left-btn");
 const rightBtn = document.querySelector(".right-btn");
 const slidesLength = leftSlide.querySelectorAll("div").length;
 
-let currentSlide = 0;
+let currentSlideBottom = 0;
 
 rightSlide.style.transform = `translateY(-${(slidesLength - 1) * 100}%)`;
 
@@ -50,37 +64,37 @@ rightBtn.addEventListener("click", () => changeSlide("right"));
 
 function changeSlide(btn) {
   if (btn == "right") {
-    currentSlide++;
+    currentSlideBottom++;
 
-    if (currentSlide > slidesLength - 1) {
-      currentSlide = 0;
+    if (currentSlideBottom > slidesLength - 1) {
+      currentSlideBottom = 0;
     }
   } else if (btn == "left") {
-    currentSlide--;
+    currentSlideBottom--;
 
-    if (currentSlide < 0) {
-      currentSlide = slidesLength - 1;
+    if (currentSlideBottom < 0) {
+      currentSlideBottom = slidesLength - 1;
     }
   }
 
   rightSlide.style.transform = `translateY(-${
-    (slidesLength - 1 - currentSlide) * 100
+    (slidesLength - 1 - currentSlideBottom) * 100
   }%)`;
-  leftSlide.style.transform = `translateY(-${currentSlide * 100}%)`;
+  leftSlide.style.transform = `translateY(-${currentSlideBottom * 100}%)`;
 }
 
 setInterval(autoChangeSlide, 3000);
 
 function autoChangeSlide() {
 
-  currentSlide++;
+  currentSlideBottom++;
 
-  if (currentSlide > slidesLength - 1) {
-    currentSlide = 0;
+  if (currentSlideBottom > slidesLength - 1) {
+    currentSlideBottom = 0;
   }
 
   rightSlide.style.transform = `translateY(-${
-    (slidesLength - 1 - currentSlide) * 100
+    (slidesLength - 1 - currentSlideBottom) * 100
   }%)`;
-  leftSlide.style.transform = `translateY(-${currentSlide * 100}%)`;
+  leftSlide.style.transform = `translateY(-${currentSlideBottom * 100}%)`;
 }

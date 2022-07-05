@@ -64,7 +64,7 @@
             <!--titre de la rubrique-->
             <div class="rubric_title">
                 <div class="number">01</div>
-                <div class="text">Biographie</div>
+                <div class="text">Biographie</div></a>
             </div>
             <!--container de la partie biographie-->
             <div class="container_biography">
@@ -99,27 +99,96 @@
                 <div class="number2">02</div>
                 <div class="text2bis">Gallerie</div>
             </div>
-        <!--gallerie des oeuvres-->
-        <div class="container_gallerie">
-            <div class="panel active" style="background-image: url('images/Acquired_vortex.png')">
-                <h3>Acquired vortex</h3>
+
+        <div class="carousel_oeuvres">
+            <!--première image-->
+            <div class="bloc_image">
+              <div class="slide-index"></div>
+              <source srcset="images/Acquired_vortexresponsive.png" media="(max-width:450px)">
+              <img class="image" src="images/Acquired_vortex.png" alt="deuxième photo du carousel" width="900" height="675">
+            </picture>
+            <div class="image_info">
+              <div class="image_title">Acquired Vortex</div>
+              <div class="image_date">2010</div>
             </div>
-            <div class="panel" style="background-image:url('images/Dirty_Harry.png')">
-                <h3>Dirty Harry</h3>
             </div>
-            <div class="panel" style="background-image:url('images/goodbye_cruel_world.png')">
-             <h3>Goodbye cruel world</h3>
-            </div> 
-            <div class="panel" style="background-image:url('images/In_the_desert.png')">
-                <h3>In the desert</h3>
+        
+            <!--deuxième image-->
+            <div class="bloc_image">
+              <div class="slide-index"></div>
+                <picture>
+                  <picture>
+                    <img class="image" src="images/Smoke_Smoke_Smoke2.png" alt="première photo du carousel" width="900" height="675"> 
+                  </picture>
+                  <div class="image_info">
+                    <div class="image_title">Smoke Smoke Smoke 2</div>
+                    <div class="image_date">2004</div>
+                  </div>
+              </div>
+        
+            <!--troisième image-->
+            <div class="bloc_image">
+              <div class="slide-index"></div>
+                <picture>
+                  <img class="image" src="images/just_Hell.png" alt="troisième photo du carousel" width="900" height="675">
+                </picture>
+                <div class="image_info">
+                  <div class="image_title">Just Hell</div>
+                  <div class="image_date">2009</div>
+                </div>
             </div>
-            <div class="panel" style="background-image:url('images/just_Hell.png')">
-                <h3>Just Hell</h3>
+        
+            <!--quatrième image-->
+            <div class="bloc_image">
+              <div class="slide-index"></div>
+                <picture>
+                  <img class="image" src="images/goodbye_cruel_world.png" alt="quatrième photo du carousel" width="900" height="675">
+                </picture>
+                <div class="image_info">
+                  <div class="image_title">Goodbye cruel world</div>
+                  <div class="image_date">2010</div>
+                </div>
             </div>
-            <div class="panel" style="background-image:url('images/time_bomb.png')">
-                <h3>Time Bomb</h3>
+        
+            <!--cinquième image-->
+            <div class="bloc_image">
+              <div class="slide-index"></div>
+                <picture>
+                  <img class="image" src="images/Jean_Michel_Basquiat.png" alt="troisième photo du carousel" width="900" height="675">
+                </picture>
+                <div class="image_info">
+                  <div class="image_title">Jean Michel Basquiat</div>
+                  <div class="image_date">2012</div>
+                </div>
             </div>
-        </div>
+        
+            <!--sixième image-->
+            <div class="bloc_image">
+              <div class="slide-index"></div>
+                <picture>
+                  <img class="image" src="images/landscape2.png" alt="troisième photo du carousel" width="900" height="675">
+                </picture>
+                <div class="image_info">
+                  <div class="image_title">Landscape 2</div>
+                  <div class="image_date">2008</div>
+                </div>
+            </div>
+        
+            <!--flèches pour le carrousel-->
+            <a class="prevTop" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="nextTop" onclick="plusSlides(1)">&#10095;</a>
+            
+            <!--barre de points de défilement-->
+            <div class="slide-dot">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
+            </div>
+          
+          </div>
             
 
         <!--partie de la galerie avec la citation et la photo du plan de travail-->
