@@ -1,4 +1,6 @@
-/*changement d'image de fond de l'entête lorsqu'on clique sur le menu, apparition de l'entête avec toutes les rubriques cliquables pour se déplacer dans les différentes partie du site et disparition du nom de l'artiste*/
+/*=======================================================================================*/
+/*changement d'image de fond de l'entête lorsqu'on clique sur le menu, apparition du menu de navigation avec toutes les rubriques cliquables pour se déplacer dans les différentes parties du site et disparition du nom de l'artiste*/
+
 const menu = document.querySelector('.menu')
 menu.onclick = function () {
     // nav('.background_menu');
@@ -19,6 +21,7 @@ function nav(entry)
         
     }
 
+//========================================================================================//
 //carrousel des oeuvres//
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -47,7 +50,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+//============================================================================================//
 // slide des expos
 const leftSlide = document.querySelector(".left-slides");
 const rightSlide = document.querySelector(".right-slides");
@@ -110,7 +113,8 @@ for (let dot of dots){
   currentSlide(avance)});
 };
 
-//changement couleurs titres rubriques en hover dela rubrique1//
+//========================================================================================//
+//changement des couleurs titres rubriques en hover dela rubrique1//
 const rubric1 = document.querySelector('.rubric1');
 const catbio1 = document.querySelector('.catbio1');
 const catbio2 = document.querySelector('.catbio2');

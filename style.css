@@ -3,6 +3,7 @@ body{
     margin: 0;
 }
 
+/*apparition douce des rubriques lorsqu'on clique sur le menu*/
 html{
     scroll-behavior: smooth;
 }
@@ -19,7 +20,7 @@ html{
     height: 107.24vh;
 }
 
-/*entête principale*/
+/*en-tête principale*/
 #div1{
     position: relative;
     background-image: url(images/background.png);
@@ -27,10 +28,9 @@ html{
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-  
 }
 
-/*entête avec menu*/
+/*menu de navigation*/
 .background_menu{
     background-image: url(images/affiche2.jpg);
     width: 100vw;
@@ -41,7 +41,7 @@ html{
     display: none;
 }
 
-/*grid des différentes rubriques du site*/
+/*grid des différentes rubriques du site sur le menu de navigation*/
 .category_menu{
     display: none;   
     grid-template-columns: repeat(8,1fr);
@@ -54,7 +54,7 @@ html{
     text-decoration: none;
 }
 
-/*flex des rubriques du menu pour aligner le chiffre avec le texte*/
+/*flex des rubriques du menu pour aligner le chiffre avec le texte à côté*/
 .rubric1, .rubric2, .rubric3, .rubric4{
     display: flex;
     align-items: center;
@@ -87,7 +87,7 @@ html{
     grid-area: 2 / 6 / 4 / 9; 
 }
 
-/*survol rubrique gallerie*/
+/*survol de la rubrique gallerie*/
 .rubric2:hover{
     background-image: url(images/brush_red.png);
 }
@@ -117,12 +117,12 @@ html{
     font-size: 7.8vw;
 }
 
-/*taille des noms noms des rubriques*/
+/*taille des titres des rubriques*/
 .category{
     font-size: 3.3vw;
 }
 
-/*barres du menu*/
+/*barres du menu burger*/
 .bar1{
     background-color: #fefee2;
     height: 0.16vh;
@@ -151,7 +151,7 @@ html{
     margin-left: 1.6vw;
 }
 
-/*container du menu*/
+/*container du menu burger*/
 .menu{
     width: 5.7vw;
     height: 8vh;
@@ -159,7 +159,7 @@ html{
     padding: 2.7vw 0 0 6vw;
 }
 
-/*bloc nom de l'artiste*/
+/*bloc avec le nom de l'artiste*/
 .name{
     color: #fefee2;
     font-family: 'Bowlby One SC', cursive; 
@@ -170,17 +170,17 @@ html{
     letter-spacing: 2px;
 }
 
-/*taille nom de l'artiste*/
+/*taille du nom de l'artiste*/
 h1{
     font-size: 10.05vh;
 }
 
-/*taille spécifications artiste*/
+/*taille des spécialités de l'artiste*/
 .subtitle1, .subtitle2{
     font-size: 5.65vh;  
 }
 
-/*margin pour coller les subtitles*/
+/*margin pour coller les 2 spécialités*/
 .subtitle1{ 
     margin-bottom: 0;
 }
@@ -189,7 +189,7 @@ h1{
     margin-top: 0;
 }
 
-/*couleur de fond et dimensiosn de la partie biographie*/
+/*couleur de fond et dimension de la partie biographie*/
 #biography{
     background-color: #2b2727;
     width: 100vw;
@@ -207,7 +207,7 @@ h1{
     margin-left: 2.6vw;
 }
 
-/*taille chiffre du titre de la partie*/
+/*taille du chiffre du titre de la partie*/
 .number{
     font-size: 16vh;
 }
@@ -228,7 +228,6 @@ h1{
     position: relative;
     width: 100vw;
     height: 100vh;
-    
 }
 
 /*couleur de police de tous les blocs dates*/
@@ -244,7 +243,7 @@ h1{
     cursor: pointer;
 }
 
-/*taill et famille de police des textes des blocs*/
+/*taille et famille de police des textes des blocs*/
 .text1, .text2, .text3, .text4{
     font-size: 3.3vh;
     font-family: 'Poppins', sans-serif;
@@ -253,19 +252,7 @@ h1{
 }
 
 /*survol sur les dates pour faire apparître les textes correspondant*/
-.date1:hover~.text1{
-    display: block;
-}
-
-.date2:hover~.text2{
-    display: block;
-}
-
-.date3:hover~.text3{
-    display: block;
-}
-
-.date4:hover~.text4{
+.date1:hover~.text1, .date2:hover~.text2, .date3:hover~.text3, .date4:hover~.text4{
     display: block;
 }
 
@@ -285,11 +272,13 @@ h1{
     grid-area: 3 / 5 / 5 / 7; 
 }
 
-/*emplacement du bloc   avec la dernière date dans la grid*/
+/*emplacement du bloc avec la dernière date dans la grid*/
 .death{
     grid-area: 2 / 7 / 4 / 8;
 }
 
+/*===================================================================================*/
+/*mise en forme du titre de la partie gallerie*/
 .rubric2_title{
     color: #000000;
     font-family: 'Permanent Marker', cursive; 
@@ -302,45 +291,25 @@ h1{
     padding-bottom: 2.6vw;
 }
 
-/*taille chiffre du titre de la partie*/
+/*taille du chiffre du titre de la deuxième partie*/
 .number2{
     font-size: 16vh;
 }
 
-/*taille du texte du titre de la partie*/
+/*taille du texte du titre de la deuxième partie*/
 .text2bis{
     font-size: 6.7vh;
 }
 
-/*couleur de fond et dimensiosn de la partie biographie*/
+/*couleur de fond et dimension de la partie gallerie*/
 #gallery{
     background-color: #2b2727;
     width: 100vw;
     height: auto;
 }
 
-.rubric2_title{
-    color: #000000;
-    font-family: 'Permanent Marker', cursive; 
-    filter: drop-shadow(10px 10px 10px #ffffff);
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    margin-right: 2.6vw;
-    padding-top: 5.2vw;
-    padding-bottom: 2.6vw;
-  }
-  
-/*taille chiffre du titre de la partie*/
-.number2{
-    font-size: 16vh;
-}
-  
-/*taille du texte du titre de la partie*/
-.text2bis{
-    font-size: 6.7vh;
-}
-
+/*===================================================================================*/
+/*carrousel des oeuvres*/
 .bloc_image { 
     display: none; 
     height: 100vh;
@@ -353,6 +322,7 @@ h1{
     overflow-x: hidden;
 }
 
+/*flèches de défilement du carrousel*/
 .prevTop, .nextTop {
     cursor: pointer;
     position: absolute;        
@@ -383,29 +353,7 @@ h1{
     background-color: rgba(0,0,0,0.5);
 } 
 
-.image_title {
-    font-size:2.5vw;
-    position:absolute;
-    bottom:0;
-    left:0;
-    margin:0;
-    letter-spacing: 2px;
-    color:#fefee2;
-    padding-left: 30px;
-    margin-bottom: 50px;
-}
-
-.image_date{
-    font-size:2vw;
-    position:absolute;
-    bottom:0;
-    left:0;
-    margin:0;
-    letter-spacing: 2px;
-    color:#fefee2;
-    padding-left: 30px;
-}
-
+/*bandeau de l'image avec le titre et la date*/
 .image_info{
     display: flex;
     flex-direction: column;
@@ -420,6 +368,31 @@ h1{
     font-family: 'Bowlby One SC', cursive;
 } 
 
+/*titre de l'oeuvre*/
+.image_title {
+    font-size:2.5vw;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin:0;
+    letter-spacing: 2px;
+    color:#fefee2;
+    padding-left: 30px;
+    margin-bottom: 50px;
+}
+
+/*date de création de l'oeuvre*/
+.image_date{
+    font-size:2vw;
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin:0;
+    letter-spacing: 2px;
+    color:#fefee2;
+    padding-left: 30px;
+}
+
 .image{ 
     background-size: contain;
     background-position: center;
@@ -430,6 +403,7 @@ h1{
     display: flex;
 }
 
+/*barre vertical pour défilement du carrousel*/
 .slide-dot{ 
     transform: rotate(90deg);
     position: absolute;
@@ -440,6 +414,7 @@ h1{
     right: 0;
 }
 
+/*chaque point de la barre verticale de défilement du carrousel*/
 .dot {
     cursor: pointer;
     height: 10px;
@@ -454,6 +429,7 @@ h1{
 .active, .dot:hover { 
     background-color: #111111; }
 
+/*animation du carrousel*/
 .fade {
     animation-name: fade;
     animation-duration: 1s;
@@ -472,9 +448,9 @@ h1{
     grid-column-gap: 0px;
     grid-row-gap: 0px; 
     background-color: #2b2727;
-  }
+}
   
-  /*photo du plan de travail*/
+/*photo du plan de travail*/
 .photo{
     grid-area: 1 / 1 / 4 / 4; 
     background-image: url(images/plan_de_travail.jpg);
@@ -482,9 +458,9 @@ h1{
     height: 76.7vh;
     margin-top: 15.6vw;
     margin-left: 7.6vw;
-  }
+}
   
-  /*citation de l'artiste*/
+/*citation de l'artiste*/
 .citation{
     font-family: 'Poppins', sans-serif;
     font-size: 1.6vw;
@@ -495,9 +471,9 @@ h1{
     padding: 2.6vw 4.3vw 0 4.3vw;
     margin-bottom: 7.8vw;
     margin-right: 7.8vw;
-  }
+}
   
-/*image d'une tâche de peinture rouge*/
+/*image de la tâche de peinture rouge avec le texte de la citation*/
 .colored_dash_paint{
     background-image: url(images/dash_paint.png);
     grid-area: 4 / 6 / 6 / 8;
@@ -506,8 +482,10 @@ h1{
     height: 31.4vh;
     position: relative;
     bottom: 120px;
-  }
+}
 
+/*=======================================================================================*/
+/*titre de la troisième partie sur les événements*/
 .rubric3_title{
     color: #000000;
     font-family: 'Permanent Marker', cursive; 
@@ -519,22 +497,24 @@ h1{
     padding-bottom: 2.6vw;
 }
 
-/*taille chiffre du titre de la partie*/
+/*taille chiffre du titre de la partie événements*/
 .number3{
     font-size: 16vh;
 }
 
-/*taille du texte du titre de la partie*/
+/*taille du texte du titre de la partie événements*/
 .text3bis{
     font-size: 6.7vh;
 }
 
+/*mise en forme et dimensions de la partie événements*/
 #events{
     background-color: #2b2727;
     width: 100vw;
     height: auto;
 }
 
+/*carrousel des expos*/
 .container_expo{
     height: 100vh;
     width: 100vw;
@@ -543,6 +523,7 @@ h1{
     color: #fff;
 }
 
+/*slide de gauche*/
 .left-slides{
     position: absolute;
     left: 0;
@@ -551,6 +532,8 @@ h1{
     height: 100%;
     transition: transform 0.5s ease-in-out;
 }
+
+/*slide de droite*/
 .right-slides{
     position: absolute;
     left: 35%;
@@ -569,6 +552,7 @@ h1{
     align-items: center;
 }
 
+/*textes des slides de gauche*/
 .left-slides h3{
     font-size: 2.5vw;
     margin-bottom: 0.52vw;
@@ -605,6 +589,7 @@ h1{
 button:focus{
     outline: none;
 }
+
 
 .prev{
     cursor: pointer;
