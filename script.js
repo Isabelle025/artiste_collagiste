@@ -98,3 +98,14 @@ function autoChangeSlide() {
   }%)`;
   leftSlide.style.transform = `translateY(-${currentSlideBottom * 100}%)`;
 }
+
+//fonction onclick pour les dots//
+var dots = document.querySelectorAll('.dot');
+var arrayDots = Array.from(dots);
+
+for (let dot of dots){
+  dot.addEventListener("click",(e) => {
+  var avance = arrayDots.indexOf(e.target)+1;
+  console.log(avance,e.target);
+  currentSlide(avance)});
+};
