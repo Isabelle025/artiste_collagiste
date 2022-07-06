@@ -62,17 +62,17 @@ let currentSlideBottom = 0;
 
 rightSlide.style.transform = `translateY(-${(slidesLength - 1) * 100}%)`;
 
-leftBtn.addEventListener("click", () => changeSlide("left"));
 rightBtn.addEventListener("click", () => changeSlide("right"));
+leftBtn.addEventListener("click", () => changeSlide("left"));
 
 function changeSlide(btn) {
-  if (btn == "right") {
+  if (btn == "left") {
     currentSlideBottom++;
 
     if (currentSlideBottom > slidesLength - 1) {
       currentSlideBottom = 0;
     }
-  } else if (btn == "left") {
+  } else if (btn == "right") {
     currentSlideBottom--;
 
     if (currentSlideBottom < 0) {

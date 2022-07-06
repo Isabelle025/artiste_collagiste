@@ -590,7 +590,7 @@ button:focus{
     outline: none;
 }
 
-
+/*flèche de droite*/
 .prev{
     cursor: pointer;
     position: absolute;        
@@ -608,6 +608,7 @@ button:focus{
     transition: background-color 0.6s ease;
 }
 
+/*flèche de gauche*/
 .next{
     cursor: pointer;
     position: absolute;        
@@ -625,8 +626,10 @@ button:focus{
     transition: background-color 0.6s ease;   
 }
 
+/*flèche de droite positionnement*/
 .prev{  left: 35.4vw; }
 
+/*flèche de gauche positionnement*/
 .next { right: 65.1vw; }
 
 .prev:hover, .next:hover {
@@ -634,14 +637,15 @@ button:focus{
   color: #fefee2;
 }
 
+/*====================================================================================*/
 /*footer*/
-
 #footer{
     background-color: #2b2b2b;
     width: 100%;
     height: 100%;
 }
 
+/*mise en forme du titre du footer*/
 .rubric_title4{
     color: #000000;
     font-family: 'Permanent Marker', cursive; 
@@ -797,6 +801,7 @@ input::placeholder{
     top: 33px;
 }
 
+/*image logo Instagram*/
 .Insta{
     position: relative;
     top: -25px;
@@ -819,6 +824,7 @@ input::placeholder{
     top: 32px;
 }
 
+/*image logo Pinterest*/
 .pint{
     position: relative;
     top: -26px;
@@ -841,6 +847,7 @@ input::placeholder{
     top: 32px;
 }
 
+/*image logo Deviant Art*/
 .DA{
     position: relative;
     top: -27px;
