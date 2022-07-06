@@ -51,7 +51,7 @@ function showSlides(n) {
 }
 
 //============================================================================================//
-// slide des expos
+// carrousel des expos
 const leftSlide = document.querySelector(".left-slides");
 const rightSlide = document.querySelector(".right-slides");
 const leftBtn = document.querySelector(".left-btn");
@@ -114,7 +114,7 @@ for (let dot of dots){
 };
 
 //========================================================================================//
-//changement des couleurs titres rubriques en hover dela rubrique1//
+//changement des couleurs titres rubriques en hover de la rubrique1//
 const rubric1 = document.querySelector('.rubric1');
 const catbio1 = document.querySelector('.catbio1');
 const catbio2 = document.querySelector('.catbio2');
@@ -164,3 +164,4 @@ rubric4.addEventListener('mouseout',function()
     catbio7.style.color = "#000000";
     catbio8.style.color = "#000000"
 });
+
