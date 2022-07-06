@@ -109,3 +109,54 @@ for (let dot of dots){
   console.log(avance,e.target);
   currentSlide(avance)});
 };
+
+//changement couleurs titres rubriques en hover dela rubrique1//
+const rubric1 = document.querySelector('.rubric1');
+const catbio1 = document.querySelector('.catbio1');
+const catbio2 = document.querySelector('.catbio2');
+
+rubric1.addEventListener('mouseover',function()
+{
+    catbio1.style.color = "#e9940b";
+    catbio2.style.color = "#e9940b"
+});
+
+rubric1.addEventListener('mouseout',function()
+{
+    catbio1.style.color = "#000000";
+    catbio2.style.color = "#000000"
+});
+
+//changement couleurs titres rubriques en hover dela rubrique3//
+const rubric3 = document.querySelector('.rubric3');
+const catbio5 = document.querySelector('.catbio5');
+const catbio6 = document.querySelector('.catbio6');
+
+rubric3.addEventListener('mouseover',function()
+{
+    catbio5.style.color = "#fefee2";
+    catbio6.style.color = "#fefee2"
+});
+
+rubric3.addEventListener('mouseout',function()
+{
+    catbio5.style.color = "#000000";
+    catbio6.style.color = "#000000"
+});
+
+//changement couleurs titres rubriques en hover dela rubrique4//
+const rubric4 = document.querySelector('.rubric4');
+const catbio7 = document.querySelector('.catbio7');
+const catbio8 = document.querySelector('.catbio8');
+
+rubric4.addEventListener('mouseover',function()
+{
+    catbio7.style.color = "#177026";
+    catbio8.style.color = "#177026"
+});
+
+rubric4.addEventListener('mouseout',function()
+{
+    catbio7.style.color = "#000000";
+    catbio8.style.color = "#000000"
+});
