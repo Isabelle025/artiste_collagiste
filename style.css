@@ -627,10 +627,14 @@ button:focus{
 }
 
 /*flèche de droite positionnement*/
-.prev{  left: 35.4vw; }
+.prev{  
+    left: 35.4vw; 
+}
 
 /*flèche de gauche positionnement*/
-.next { right: 65.1vw; }
+.next{
+     right: 65.1vw; 
+}
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.5);

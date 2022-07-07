@@ -3,7 +3,6 @@
 
 const menu = document.querySelector('.menu')
 menu.onclick = function () {
-    // nav('.background_menu');
     nav('.category_menu');
     document.querySelector('.name').style.display= "none";
     document.querySelector('.menu').style.display="none";
@@ -20,6 +19,9 @@ function nav(entry)
         }
         
     }
+
+//disparition du menu de navigation quand on clique sur une rubrique//
+
 
 //========================================================================================//
 //carrousel des oeuvres//
