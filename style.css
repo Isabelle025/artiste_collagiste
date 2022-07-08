@@ -53,7 +53,7 @@ html{
     z-index:99;
 }
 
-.catbio, .rubric5{
+.catbio, .accueil >a{
     color: #000000;
     font-family: 'Permanent Marker', cursive; 
     text-decoration: none;
