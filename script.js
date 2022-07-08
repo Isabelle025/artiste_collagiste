@@ -103,6 +103,7 @@ function autoChangeSlide() {
   leftSlide.style.transform = `translateY(-${currentSlideBottom * 100}%)`;
 }
 
+navigator
 //fonction onclick pour les dots//
 var dots = document.querySelectorAll('.dot');
 var arrayDots = Array.from(dots);
