@@ -49,28 +49,28 @@ html{
 .category_menu{
     display: none;   
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(6,1fr);
+    grid-template-rows: repeat(7,1fr);
     z-index:99;
 }
 
-.catbio{
+.catbio, .rubric5{
     color: #000000;
     font-family: 'Permanent Marker', cursive; 
     text-decoration: none;
 }
 
 /*flex des rubriques du menu pour aligner le chiffre avec le texte à côté*/
-.rubric1, .rubric2, .rubric3, .rubric4{
+.rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
     display: flex;
     align-items: center;
     cursor: pointer;
     width: 30vw;
-    height: 30vh;
+    height: 27vh;
 }
 
 /*emplacement de la rubrique biographie dans la grid*/
 .rubric1{
-    grid-area:   1 / 1 / 3 / 4; 
+    grid-area: 3 / 1 / 5 / 4 ; 
     margin-left: 2.6vh;
 }
 
@@ -85,36 +85,52 @@ html{
 /*survol rubrique biographie*/
 .rubric1:hover{
     background-image: url(images/survol_vert.png);
+    background-size: contain;
 }
 
 /*emplacement de la grid de la rubrique gallerie*/
 .rubric2{
-    grid-area: 2 / 6 / 4 / 9; 
+    grid-area: 4 / 6 / 6 / 9; 
 }
 
 /*survol de la rubrique gallerie*/
 .rubric2:hover{
     background-image: url(images/brush_red.png);
+    background-size: contain;
 }
 
 /*emplacement de la rubrique événements dans la grid*/
 .rubric3{
-    grid-area:   3 / 2 / 5 / 5; 
+    grid-area:  5 / 2 / 7 / 5; 
 }
 
 /*survol de la rubrique événements*/
 .rubric3:hover{
     background-image: url(images/brush_violet\ 1.png);
+    background-size: contain;
 }
 
 /*emplacement de la rubrique contact dans la grid*/
 .rubric4{
-    grid-area: 4 / 5 / 6 / 9;
+    grid-area:  6 / 5 / 8 / 9;
+}
+
+.rubric5{
+    grid-area: 1 / 3 / 3 / 6;
+    font-size: 3.3vw;
+    
+}
+
+.rubric5:hover{
+    background-image: url(images/brush_red.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /*survol de la rubrique contact*/
 .rubric4:hover{
     background-image: url(images/brush_black.png);
+    background-size: contain;
 }
 
 /*taille du chiffre des rubriques*/
