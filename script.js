@@ -3,35 +3,27 @@
 
 const menu = document.querySelector('.menu')
 menu.onclick = function () {
-    nav('.category_menu');
-    // document.querySelector('.name').style.display= "none";
-    document.querySelector('.menu').style.display="none";
-    }
-    
-function nav(entry) 
-    {
-        var text = document.querySelector(entry);
-
-        if (text.style.display == 'grid'){
-            text.style.display = ('unset');
-        } else {
-            text.style.display = ('grid');
-        }
-        
-    }
+  contain.style.display = ('grid');
+}
 
 //disparition du menu de navigation quand on clique sur une rubrique//
-
+const contain = document.querySelector('.background_menu')
+contain.onclick = function () {
+    contain.style.display="none";
+    }
 
 
 //========================================================================================//
 //carrousel des oeuvres//
+
+//flèches du carrousel//
 const topArrow = document.querySelector(".prevTop");
 const bottomArrow = document.querySelector(".nextTop");
 
 topArrow.addEventListener("click", () => plusSlides(-1));
 bottomArrow.addEventListener("click", () => plusSlides(1));
 
+//carrousel des oeuvres et dots//
 var slideIndex = 1;
 showSlides(slideIndex);
 

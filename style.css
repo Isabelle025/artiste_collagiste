@@ -49,6 +49,7 @@ html{
     display: none;   
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(6,1fr);
+    z-index: 99;
 }
 
 .catbio{
