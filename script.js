@@ -26,6 +26,12 @@ function nav(entry)
 
 //========================================================================================//
 //carrousel des oeuvres//
+const topArrow = document.querySelector(".prevTop");
+const bottomArrow = document.querySelector(".nextTop");
+
+topArrow.addEventListener("click", () => plusSlides(-1));
+bottomArrow.addEventListener("click", () => plusSlides(1));
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
