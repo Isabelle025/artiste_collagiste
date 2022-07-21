@@ -13,29 +13,25 @@ contain.onclick = function () {
     }
 
 //scroll du menu burger//
-if (window.matchMedia("(min-width: 765px)").matches) {
   let timer = null;
   window.addEventListener('scroll', function() {
-      const header = document.querySelector("header");
+      const menu = document.querySelector(".menu");
       let scrollY = this.scrollY;
       if (timer !== null) {
           clearTimeout(timer);
-          document.getElementById("menu").classList.add("nofixed");
           setTimeout(function() {
-              document.getElementById("menu").classList.remove("fixed");
-              document.getElementById("header_title").style.marginTop = null;
+              menu.style.display = "none";
           }, 400);
       }
-      if (scrollY > header.clientHeight) {
+
+      
+      
+      if (scrollY >= 0) {
           timer = setTimeout(function() {
-              document.getElementById("menu").classList.add("fixed");
-              document.getElementById("header_title").style.marginTop = "6rem";
-              document.getElementById("menu").classList.remove("nofixed");
+            menu.style.display = "unset";
           }, 1000);
       }
   }, false);
-}
-
 
 //========================================================================================//
 //carrousel des oeuvres//
