@@ -171,12 +171,14 @@ html{
 
 /*container du menu burger*/
 .menu{
-    width: 5.7vw;
-    height: 8vh;
     cursor: pointer;
-    padding: 2.7vw 0 0 6vw; 
     position: fixed;
     z-index: 99;
+    background-color: black;
+    margin: 1.04vw 0 0 1.04vw;
+    padding: 1.56vw 1.04vw;
+    opacity: 0.80;
+    border-radius: 10px;
 }
 
 /*bloc avec le nom de l'artiste*/
@@ -437,8 +439,7 @@ h1{
 }
 
 /*chaque point de la barre verticale de défilement du carrousel*/
-.dot 
-{
+.dot{
     cursor: pointer;
     height: 10px;
     width: 10px;

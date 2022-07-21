@@ -12,6 +12,30 @@ contain.onclick = function () {
     contain.style.display="none";
     }
 
+//scroll du menu burger//
+if (window.matchMedia("(min-width: 765px)").matches) {
+  let timer = null;
+  window.addEventListener('scroll', function() {
+      const header = document.querySelector("header");
+      let scrollY = this.scrollY;
+      if (timer !== null) {
+          clearTimeout(timer);
+          document.getElementById("menu").classList.add("nofixed");
+          setTimeout(function() {
+              document.getElementById("menu").classList.remove("fixed");
+              document.getElementById("header_title").style.marginTop = null;
+          }, 400);
+      }
+      if (scrollY > header.clientHeight) {
+          timer = setTimeout(function() {
+              document.getElementById("menu").classList.add("fixed");
+              document.getElementById("header_title").style.marginTop = "6rem";
+              document.getElementById("menu").classList.remove("nofixed");
+          }, 1000);
+      }
+  }, false);
+}
+
 
 //========================================================================================//
 //carrousel des oeuvres//
@@ -103,7 +127,6 @@ function autoChangeSlide() {
   leftSlide.style.transform = `translateY(-${currentSlideBottom * 100}%)`;
 }
 
-navigator
 //fonction onclick pour les dots//
 var dots = document.querySelectorAll('.dot');
 var arrayDots = Array.from(dots);
@@ -133,7 +156,7 @@ rubric1.addEventListener('mouseout',function()
     catbio2.style.color = "#000000"
 });
 
-//changement couleurs titres rubriques en hover dela rubrique3//
+//changement couleurs titres rubriques en hover de la rubrique3//
 const rubric3 = document.querySelector('.rubric3');
 const catbio5 = document.querySelector('.catbio5');
 const catbio6 = document.querySelector('.catbio6');
@@ -150,7 +173,7 @@ rubric3.addEventListener('mouseout',function()
     catbio6.style.color = "#000000"
 });
 
-//changement couleurs titres rubriques en hover dela rubrique4//
+//changement couleurs titres rubriques en hover de la rubrique4//
 const rubric4 = document.querySelector('.rubric4');
 const catbio7 = document.querySelector('.catbio7');
 const catbio8 = document.querySelector('.catbio8');
