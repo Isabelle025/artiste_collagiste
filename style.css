@@ -174,11 +174,11 @@ html{
     cursor: pointer;
     position: fixed;
     z-index: 99;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.802);
     margin: 1.04vw 0 0 1.04vw;
     padding: 1.56vw 1.04vw;
-    opacity: 0.80;
     border-radius: 10px;
+    animation: fade 0.6s;
 }
 
 /*bloc avec le nom de l'artiste*/
@@ -495,17 +495,9 @@ h1{
     padding: 2.6vw 4.3vw 0 4.3vw;
     margin-bottom: 7.8vw;
     margin-right: 7.8vw;
-}
-  
-/*image de la tâche de peinture rouge avec le texte de la citation*/
-.colored_dash_paint{
     background-image: url(images/dash_paint.png);
-    grid-area: 4 / 6 / 6 / 8;
     background-repeat: no-repeat;
-    width: 15.6vw;
-    height: 31.4vh;
-    position: relative;
-    bottom: 120px;
+    background-position: bottom right -5vw;
 }
 
 /*=======================================================================================*/
