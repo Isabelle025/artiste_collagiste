@@ -437,7 +437,8 @@ h1{
 }
 
 /*chaque point de la barre verticale de défilement du carrousel*/
-.dot {
+.dot 
+{
     cursor: pointer;
     height: 10px;
     width: 10px;
