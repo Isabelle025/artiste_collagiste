@@ -187,8 +187,6 @@ html{
     font-family: 'Bowlby One SC', cursive; 
     display: flex;
     flex-direction: column;
-    /* margin-left: 12.04vh;
-    margin-top: 15.7vh; */
     letter-spacing: 2px;
     justify-content: center;
     padding-left: 100px;
