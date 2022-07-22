@@ -791,7 +791,7 @@ input::placeholder{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 60px;
+    height: 65px;
 }
 
 /*image logo Facebook*/
@@ -816,7 +816,7 @@ input::placeholder{
 }
 
 .facebook > :hover > img{
-    top: 33px;
+    top: 37px;
 }
 
 /*image logo Instagram*/
@@ -839,7 +839,7 @@ input::placeholder{
 }
 
 .instagram > :hover > img{
-    top: 32px;
+    top: 36px;
 }
 
 /*image logo Pinterest*/
@@ -862,7 +862,7 @@ input::placeholder{
 }
 
 .pinterest > :hover > img{
-    top: 32px;
+    top: 37px;
 }
 
 /*image logo Deviant Art*/
@@ -885,5 +885,5 @@ input::placeholder{
 }
 
 .deviant_art > :hover > img{
-    top: 33px;
+    top: 37px;
 }
