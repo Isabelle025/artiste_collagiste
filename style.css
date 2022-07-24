@@ -791,7 +791,7 @@ input::placeholder{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    height: 65px;
+    height: 66px;
 }
 
 /*image logo Facebook*/
@@ -822,7 +822,7 @@ input::placeholder{
 /*image logo Instagram*/
 .Insta{
     position: relative;
-    top: -25px;
+    top: -27px;
 }
 
 .instagram > a{
@@ -839,7 +839,7 @@ input::placeholder{
 }
 
 .instagram > :hover > img{
-    top: 36px;
+    top: 38px;
 }
 
 /*image logo Pinterest*/
