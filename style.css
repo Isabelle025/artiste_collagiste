@@ -914,6 +914,59 @@ input::placeholder{
         height: 0.3vh;
     }
 
+    .rubric1{
+        background-image: url(images/survol_vert.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30vw;
+        height: 20vh;
+    }
+
+    .catbio1, .catbio2{
+        color: #e9940b;
+    }
+
+    .rubric2{
+        background-image: url(images/brush_red.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30vw;
+        height: 20vh;
+    }
+
+    .rubric3{
+        background-image: url(images/brush_violet\ 1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30vw;
+        height: 20vh;
+    }
+
+    .catbio5, .catbio6{
+        color: #fefee2;
+    }
+
+    .rubric4{
+        background-image: url(images/brush_black.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30vw;
+        height: 20vh;
+    }
+
+    .catbio7, .catbio8{
+        color: #177026;
+    }
+
+    .rubric5{
+        background-image: url(images/brush_red.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 30vw;
+        height: 20vh;
+    }
+
+
 }
 
 @media screen and (max-width: 840px){
@@ -936,6 +989,14 @@ input::placeholder{
         font-size: 2vw;  
     }
 
+    .category{
+        font-size: 4vw;
+    }
+
+    .rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
+        height: 10vh;
+    }
+
 }
 
 @media screen and (max-width: 500px){
@@ -952,6 +1013,10 @@ input::placeholder{
         font-size: 2vw;  
     }
 
+    .category{
+        font-size: 4vw;
+    }
+
 }
 
 @media screen and (max-width: 350px){
@@ -963,6 +1028,10 @@ input::placeholder{
     .name{
         padding-left: 20px;
         padding-top: 80px;
+    }
+
+    .category{
+        font-size: 4vw;
     }
 
 }
