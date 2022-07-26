@@ -891,10 +891,9 @@ input::placeholder{
 }
 
 /*responsive tablet*/
-@media screen and (max-width: 850px){
+@media screen and (max-width: 1180px){
     #div1{
         background-image: url(images/background_responsive.png);
-        background-position-y: bottom;
         align-items: start;
     }
 
@@ -902,6 +901,62 @@ input::placeholder{
         padding-left: 50px;
         padding-top: 150px;
     }
+
+    .subtitle1, .subtitle2{
+        font-size: 2vw;  
+    }
+
+}
+
+@media screen and (max-width: 840px){
+    #div1{
+        height: 80vh;
+    }
+
+    .subtitle1, .subtitle2{
+        font-size: 2vw;  
+    }
+
+}
+
+@media screen and (max-width: 665px){
+    #div1{  
+        height: 60vh;
+    }
+
+    .subtitle1, .subtitle2{
+        font-size: 2vw;  
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    #div1{  
+        height: 40vh;
+    }
+
+    .name{
+        padding-left: 30px;
+        padding-top: 100px;
+    }
+
+    .subtitle1, .subtitle2{
+        font-size: 2vw;  
+    }
+
+}
+
+@media screen and (max-width: 350px){
+    #div1{  
+        height: 40vh;
+        background-position: bottom;
+    }
+
+    .name{
+        padding-left: 20px;
+        padding-top: 80px;
+    }
+
 }
 
 
