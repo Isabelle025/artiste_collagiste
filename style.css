@@ -970,68 +970,52 @@ input::placeholder{
 }
 
 @media screen and (max-width: 840px){
-    #div1{
-        height: 80vh;
-    }
-
     .subtitle1, .subtitle2{
         font-size: 2vw;  
+    }
+    
+    .category, .accueil{
+        font-size: 6vw;
     }
 
 }
 
 @media screen and (max-width: 665px){
-    #div1{  
-        height: 60vh;
-    }
-
     .subtitle1, .subtitle2{
         font-size: 2vw;  
     }
 
-    .category{
-        font-size: 4vw;
-    }
-
     .rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
-        height: 10vh;
+        height: 15vh;
     }
 
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 506px){
     #div1{  
-        height: 40vh;
+        background-position: bottom;
     }
 
     .name{
         padding-left: 30px;
-        padding-top: 100px;
+        padding-top: 180px;
     }
 
     .subtitle1, .subtitle2{
         font-size: 2vw;  
     }
 
-    .category{
-        font-size: 4vw;
-    }
 
 }
 
 @media screen and (max-width: 350px){
-    #div1{  
-        height: 40vh;
-        background-position: bottom;
-    }
-
     .name{
         padding-left: 20px;
         padding-top: 80px;
     }
 
-    .category{
-        font-size: 4vw;
+    .rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
+        height: 5vh;
     }
 
 }
