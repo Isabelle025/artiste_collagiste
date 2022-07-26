@@ -906,6 +906,14 @@ input::placeholder{
         font-size: 2vw;  
     }
 
+    .bar2{
+        height: 0.3vh;
+    }
+
+    .bar4{
+        height: 0.3vh;
+    }
+
 }
 
 @media screen and (max-width: 840px){
