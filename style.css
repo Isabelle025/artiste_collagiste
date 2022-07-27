@@ -1066,10 +1066,20 @@ input::placeholder{
         grid-area: 4 / 3 / 6 / 5;
     }
 
+    /*2ème partie gallerie*/
     .gallery{
         padding-top: 50px;
     }
 
+    .prevTop, .nextTop {
+        font-size: 3vw;
+        margin-left: 20px;
+    }
+
+    .image_info{
+        height: 12vh;
+        width: 36vw;
+    } 
     
 }
 
