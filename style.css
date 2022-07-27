@@ -887,17 +887,20 @@ input::placeholder{
     top: 37px;
 }
 
+/*=====================================================================================*/
 /*responsive tablet*/
+
 @media screen and (min-width: 769px) and (max-width: 992px){
+    /*header*/
     #div1{
         background-image: url(images/background_responsive.png);
-        
     }
 
     .name{
         padding-left: 50px;
     }
 
+    /*menu burger*/
     .bar2{
         height: 0.3vh;
     }
@@ -906,6 +909,7 @@ input::placeholder{
         height: 0.3vh;
     }
 
+    /*catégories menu de navigation*/
     .rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
         background-size: contain;
         background-repeat: no-repeat;
@@ -943,6 +947,7 @@ input::placeholder{
         background-image: url(images/brush_red.png);
     }
 
+    /*première partie biographie*/
     .container_biography{
         background-image: url(images/bio_responsive.png);
         background-position: center;
@@ -979,16 +984,29 @@ input::placeholder{
         grid-area: 4 / 4 / 6 / 6;
     }
 
+    /*2ème partie gallerie*/
     .gallery{
         padding-top: 50px;
     }
 
+    .prevTop, .nextTop {
+        font-size: 3vw;
+        margin-left: 20px;
+    }
+
+    .image_info{
+        height: 10vh;
+        width: 33vw;
+    } 
+
 
 }
 
+/*===============================================================================*/
 @media screen and (min-width: 578px) and (max-width: 768px){
     #div1{
         background-image: url(images/background_responsive.png);
+        background-position: bottom right;
     }
 
     .name{
@@ -1051,12 +1069,15 @@ input::placeholder{
     .gallery{
         padding-top: 50px;
     }
+
+    
 }
 
-@media screen and (min-width: 350px) and (max-width: 577px){
+/*====================================================================================*/
+@media screen and (min-width: 320px) and (max-width: 577px){
     #div1{
         background-image: url(images/background_responsive.png);
-        background-position: bottom;
+        background-position: bottom right;
     }
 
     .name{
@@ -1114,45 +1135,12 @@ input::placeholder{
 
 }
 
-/* @media screen and (max-width: 665px){
-    .subtitle1, .subtitle2{
-        font-size: 2vw;  
-    }
-
-    .rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
-        height: 15vh;
-    }
-
-} */
-
-/* @media screen and (max-width: 506px){
-    #div1{  
-        background-position: bottom;
-    }
-
-    .name{
-        padding-left: 30px;
-        padding-top: 180px;
-    }
-
-    .subtitle1, .subtitle2{
-        font-size: 2vw;  
-    }
 
 
-}
+   
+    
 
-@media screen and (max-width: 350px){
-    .name{
-        padding-left: 20px;
-        padding-top: 80px;
-    }
 
-    .rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
-        height: 5vh;
-    }
-
-} */
 
 
 
