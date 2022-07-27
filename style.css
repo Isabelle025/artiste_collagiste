@@ -891,7 +891,7 @@ input::placeholder{
 @media screen and (min-width: 769px) and (max-width: 992px){
     #div1{
         background-image: url(images/background_responsive.png);
-        background-position: left;
+        
     }
 
     .name{
@@ -950,6 +950,11 @@ input::placeholder{
         margin-top: 50px;
     }
 
+    .rubric_title{
+        justify-content: end;
+        margin-right: 2.6vw;
+    }
+
     .text1, .text2, .text3, .text4{
         font-size: 2vw;
         /*rendre le texte visible*/
@@ -973,6 +978,10 @@ input::placeholder{
     /*emplacement du bloc avec la dernière date dans la grid*/
     .death{
         grid-area: 4 / 3 / 6 / 5;
+    }
+
+    .gallery{
+        padding-top: 20px;
     }
 
 
@@ -1003,9 +1012,46 @@ input::placeholder{
         font-size: 4vw;
     }
 
+    .container_biography{
+        background-image: url(images/bio_responsive.png);
+        background-position: center;
+        grid-template-rows: repeat(4,1fr);
+        margin-top: 20px;
+    }
+
+    .rubric_title{
+        justify-content: end;
+        margin-right: 2.6vw;
+    }
+
+    .text1, .text2, .text3, .text4{
+        font-size: 2vw;
+        /*rendre le texte visible*/
+        display: block;
+    }
+
+    .birth{
+        grid-area:  1 / 1 / 3 / 3;  
+    }
+    
+    /*emplacement du bloc avec la deuxième date dans la grid*/
+    .beginning{
+        grid-area: 2/ 3 / 4 / 6;
+    }
+    
+    /*emplacement du bloc avec la troisième date dans la grid*/
+    .glory{
+        grid-area: 3 / 2 / 6 / 4; 
+    }
+    
+    /*emplacement du bloc avec la dernière date dans la grid*/
+    .death{
+        grid-area: 4 / 3 / 6 / 5;
+    }
+
 }
 
-@media screen and (min-width: 335px) and (max-width: 577px){
+@media screen and (min-width: 350px) and (max-width: 577px){
     #div1{
         background-image: url(images/background_responsive.png);
         background-position: bottom;
@@ -1025,6 +1071,43 @@ input::placeholder{
 
     .bar4{
         height: 0.3vh;
+    }
+
+    .container_biography{
+        background-image: url(images/bio_responsive.png);
+        background-position: center;
+        grid-template-rows: repeat(4,1fr);
+        margin-top: 20px;
+    }
+
+    .rubric_title{
+        justify-content: end;
+        margin-right: 2.6vw;
+    }
+
+    .text1, .text2, .text3, .text4{
+        font-size: 2vw;
+        /*rendre le texte visible*/
+        display: block;
+    }
+
+    .birth{
+        grid-area:  1 / 1 / 3 / 3;  
+    }
+    
+    /*emplacement du bloc avec la deuxième date dans la grid*/
+    .beginning{
+        grid-area: 2/ 3 / 4 / 6;
+    }
+    
+    /*emplacement du bloc avec la troisième date dans la grid*/
+    .glory{
+        grid-area: 3 / 2 / 6 / 4; 
+    }
+    
+    /*emplacement du bloc avec la dernière date dans la grid*/
+    .death{
+        grid-area: 4 / 3 / 6 / 5;
     }
 }
 
