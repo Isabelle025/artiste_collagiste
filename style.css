@@ -985,7 +985,7 @@ input::placeholder{
     }
 
     /*2ème partie gallerie*/
-    .gallery{
+    #gallery{
         padding-top: 50px;
     }
 
@@ -995,7 +995,7 @@ input::placeholder{
     }
 
     .image_info{
-        height: 10vh;
+        height: 11vh;
         width: 33vw;
     } 
 
@@ -1067,7 +1067,7 @@ input::placeholder{
     }
 
     /*2ème partie gallerie*/
-    .gallery{
+    #gallery{
         padding-top: 50px;
     }
 
@@ -1088,6 +1088,7 @@ input::placeholder{
     #div1{
         background-image: url(images/background_responsive.png);
         background-position: bottom right;
+        width: 100%;
     }
 
     .name{
