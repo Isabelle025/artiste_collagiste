@@ -201,7 +201,7 @@ h1{
 
 /*taille des spécialités de l'artiste*/
 .subtitle1, .subtitle2{
-    font-size: 1.66vw;  
+    font-size: 2vw;  
 }
 
 /*margin pour coller les 2 spécialités*/
@@ -891,19 +891,13 @@ input::placeholder{
 }
 
 /*responsive tablet*/
-@media screen and (max-width: 1180px){
+@media screen and (min-width: 769px) and (max-width: 992px){
     #div1{
         background-image: url(images/background_responsive.png);
-        align-items: start;
     }
 
     .name{
         padding-left: 50px;
-        padding-top: 150px;
-    }
-
-    .subtitle1, .subtitle2{
-        font-size: 2vw;  
     }
 
     .bar2{
@@ -914,12 +908,13 @@ input::placeholder{
         height: 0.3vh;
     }
 
-    .rubric1{
-        background-image: url(images/survol_vert.png);
+    .rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
         background-size: contain;
         background-repeat: no-repeat;
-        width: 30vw;
-        height: 20vh;
+    }
+
+    .rubric1{
+        background-image: url(images/survol_vert.png);  
     }
 
     .catbio1, .catbio2{
@@ -928,18 +923,10 @@ input::placeholder{
 
     .rubric2{
         background-image: url(images/brush_red.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 30vw;
-        height: 20vh;
     }
 
     .rubric3{
         background-image: url(images/brush_violet\ 1.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 30vw;
-        height: 20vh;
     }
 
     .catbio5, .catbio6{
@@ -948,10 +935,6 @@ input::placeholder{
 
     .rubric4{
         background-image: url(images/brush_black.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        width: 30vw;
-        height: 20vh;
     }
 
     .catbio7, .catbio8{
@@ -960,27 +943,62 @@ input::placeholder{
 
     .rubric5{
         background-image: url(images/brush_red.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 30vw;
-        height: 20vh;
     }
 
 
 }
 
-@media screen and (max-width: 840px){
+@media screen and (min-width: 578px) and (max-width: 768px){
+    #div1{
+        background-image: url(images/background_responsive.png);
+    }
+
+    .name{
+        padding-left: 40px;
+    }
+    
     .subtitle1, .subtitle2{
-        font-size: 2vw;  
+        font-size: 2.5vw;  
+    }
+
+    .bar2{
+        height: 0.3vh;
+    }
+
+    .bar4{
+        height: 0.3vh;
     }
     
     .category, .accueil{
-        font-size: 6vw;
+        font-size: 4vw;
     }
 
 }
 
-@media screen and (max-width: 665px){
+@media screen and (min-width: 335px) and (max-width: 577px){
+    #div1{
+        background-image: url(images/background_responsive.png);
+        background-position: bottom;
+    }
+
+    .name{
+        padding-left: 30px;
+    }
+
+    .subtitle1, .subtitle2{
+        font-size: 2.5vw;  
+    }
+
+    .bar2{
+        height: 0.3vh;
+    }
+
+    .bar4{
+        height: 0.3vh;
+    }
+}
+
+/* @media screen and (max-width: 665px){
     .subtitle1, .subtitle2{
         font-size: 2vw;  
     }
@@ -989,9 +1007,9 @@ input::placeholder{
         height: 15vh;
     }
 
-}
+} */
 
-@media screen and (max-width: 506px){
+/* @media screen and (max-width: 506px){
     #div1{  
         background-position: bottom;
     }
@@ -1018,7 +1036,7 @@ input::placeholder{
         height: 5vh;
     }
 
-}
+} */
 
 
 
