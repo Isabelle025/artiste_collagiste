@@ -901,12 +901,20 @@ input::placeholder{
     }
 
     /*menu burger*/
+    .bar1{
+        height: 0.3vh;
+    }
+
     .bar2{
+        height: 0.4vh;
+    }
+
+    .bar3{
         height: 0.3vh;
     }
 
     .bar4{
-        height: 0.3vh;
+        height: 0.4vh;
     }
 
     /*catégories menu de navigation*/
