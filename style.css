@@ -1014,6 +1014,7 @@ input::placeholder{
     } 
 
 
+
 }
 
 /*===============================================================================*/
@@ -1177,31 +1178,40 @@ input::placeholder{
     .rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
         background-size: contain;
         background-repeat: no-repeat;
-        height: 15vh;
+        height: 10vh;
     }
 
     .rubric1{
         background-image: url(images/survol_vert.png);  
     }
 
+    .catbio1, .catbio3, .catbio5, .catbio7{
+        font-size: 8.2vw;
+    }
+
     .catbio1, .catbio2{
         color: #e9940b;
     }
 
+    .catbio2, .catbio4, .catbio6, .catbio8{
+        font-size: 5vw;
+    }
+
     .rubric2{
         background-image: url(images/brush_red.png);
+        grid-area: 4 / 5 / 6 / 9;
     }
 
     .rubric3{
         background-image: url(images/brush_violet\ 1.png);
     }
 
-    .catbio5, .catbio6{
-        color: #fefee2;
-    }
-
     .rubric4{
         background-image: url(images/brush_black.png);
+    }
+
+    .catbio5, .catbio6{
+        color: #fefee2;
     }
 
     .catbio7, .catbio8{
