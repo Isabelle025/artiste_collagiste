@@ -397,8 +397,6 @@ h1{
     font-size:2.5vw;
     position:absolute;
     bottom:0;
-    left:0;
-    margin:0;
     letter-spacing: 2px;
     color:#fefee2;
     padding-left: 30px;
@@ -410,8 +408,6 @@ h1{
     font-size:2vw;
     position:absolute;
     bottom:0;
-    left:0;
-    margin:0;
     letter-spacing: 2px;
     color:#fefee2;
     padding-left: 30px;
@@ -901,6 +897,14 @@ input::placeholder{
         padding-left: 50px;
     }
 
+    h1{
+        font-size: 6vw;
+    }
+
+    .subtitle1, .subtitle2{
+        font-size: 3vw;
+    }
+
     /*menu burger*/
     .bar1{
         height: 0.3vh;
@@ -1135,25 +1139,39 @@ input::placeholder{
 @media screen and (min-width: 320px) and (max-width: 577px){
     #div1{
         background-image: url(images/background_responsive.png);
-        background-position: bottom right;
-        width: 100%;
-        
+        background-size: cover;
     }
 
     .name{
         padding-left: 30px;
     }
 
+    h1{
+        font-size: 7vw;
+    }
+
     .subtitle1, .subtitle2{
-        font-size: 2.5vw;  
+        font-size: 4vw;  
+    }
+
+    .bar1{
+        height: 0.32vh;
+        width: 6vw;
     }
 
     .bar2{
-        height: 0.3vh;
+        height: 0.4vh;
+        width: 5vw;
+    }
+
+    .bar3{
+        height: 0.4vh;
+        width: 7vw;
     }
 
     .bar4{
-        height: 0.2vh;
+        height: 0.5vh;
+        width: 4vw;
     }
 
     .rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
