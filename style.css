@@ -362,6 +362,7 @@ h1{
     background-color: rgba(0,0,0,0);
     transition: background-color 0.6s ease;
     transform: rotate(90deg);
+    margin-left: 20px;
 }
 
 .prevTop{ 
@@ -1021,7 +1022,10 @@ input::placeholder{
         font-size: 2.5vw;
     }
 
-
+    .photo{
+        width: 500px;
+        height: 367px;
+    }
 
 }
 
