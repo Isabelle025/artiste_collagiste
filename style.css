@@ -1133,14 +1133,25 @@ input::placeholder{
     }
 
     .prevTop, .nextTop {
-        font-size: 3vw;
-        margin-left: 20px;
+        font-size: 5vw;
+        margin-left: 30px;
     }
 
     .image_info{
-        height: 12vh;
-        width: 36vw;
+        height: 13vh;
     } 
+
+    .image_title{
+        font-size: 3.5vw;
+    }
+
+    .image_date{
+        font-size: 3vw;
+    }
+
+    .slide-dot{
+        top: 45%;
+    }
     
 }
 
