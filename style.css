@@ -1004,14 +1004,22 @@ input::placeholder{
     }
 
     .prevTop, .nextTop {
-        font-size: 3vw;
-        margin-left: 20px;
+        font-size: 5vw;
+        margin-left: 40px;
     }
 
     .image_info{
         height: 11vh;
         width: 33vw;
     } 
+
+    .image_title{
+        font-size: 3vw;
+    }
+
+    .image_date{
+        font-size: 2.5vw;
+    }
 
 
 
@@ -1222,6 +1230,10 @@ input::placeholder{
         background-image: url(images/brush_red.png);
     }
 
+    .accueil{
+        font-size: 5vw;
+    }
+
     .container_biography{
         background-image: url(images/bio_responsive.png);
         background-position: right;
@@ -1258,6 +1270,12 @@ input::placeholder{
     .death{
         grid-area: 4 / 4 / 6 / 6;
     }
+
+    #gallery{
+        padding-top: 50px;
+    }
+
+    
 
 }
 
