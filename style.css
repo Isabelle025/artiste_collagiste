@@ -983,6 +983,7 @@ input::placeholder{
         margin-right: 2.6vw;
         color: #fefee2;
         filter: drop-shadow(10px 10px 10px black);
+        gap: 15px;
     }
 
     .text1, .text2, .text3, .text4{
@@ -1014,14 +1015,8 @@ input::placeholder{
     #gallery{
         padding-top: 50px;
     }
-
-    .rubric2_title{
-        color: #fefee2;
-        filter: drop-shadow(10px 10px 10px black);
-    }
     
     /*taille du chiffre du titre de la deuxième partie*/
-
     .prevTop, .nextTop {
         font-size: 5vw;
         margin-left: 40px;
@@ -1045,9 +1040,16 @@ input::placeholder{
         height: 367px;
     }
 
-    .rubric3_title, .rubric_title4{
+    .citation{
+        padding-bottom: 2.6vw;
+        font-size: 2vw;
+        background-image: url(images/dash_paint_responsive.png);
+    }
+
+    .rubric2_title, .rubric3_title, .rubric_title4{
         color: #fefee2;
         filter: drop-shadow(10px 10px 10px black);
+        gap: 15px;
     }
 
 
