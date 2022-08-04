@@ -1160,8 +1160,8 @@ input::placeholder{
     .photo{
         background-image: url(images/plan_de_travail_responsive.jpg);
         background-repeat: no-repeat;
-        width: 400px;
-        height: 294px;
+        width: 500px;
+        height: 368px;
         margin-top: 15.6vw;
         margin-left: 7.6vw;
         grid-area: 1 / 1 / 4 / 4;
