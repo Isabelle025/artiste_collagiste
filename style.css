@@ -969,12 +969,12 @@ input::placeholder{
         grid-template-rows: repeat(4,1fr);
     }
     
-    .number{
+    .number, .number2, .number3, .nb4{
         font-size: 8.5vw;
     }
     
     /*taille du texte du titre de la partie*/
-    .text{
+    .text, .text2bis, .text3bis, .text4bis{
         font-size: 4vw;
     }
 
@@ -1021,14 +1021,6 @@ input::placeholder{
     }
     
     /*taille du chiffre du titre de la deuxième partie*/
-    .number2{
-        font-size: 8.5vw;
-    }
-    
-    /*taille du texte du titre de la deuxième partie*/
-    .text2bis{
-        font-size: 4vw;
-    }
 
     .prevTop, .nextTop {
         font-size: 5vw;
@@ -1052,6 +1044,12 @@ input::placeholder{
         width: 500px;
         height: 367px;
     }
+
+    .rubric3_title, .rubric_title4{
+        color: #fefee2;
+        filter: drop-shadow(10px 10px 10px black);
+    }
+
 
 }
 
