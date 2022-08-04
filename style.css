@@ -1156,6 +1156,19 @@ input::placeholder{
     .slide-dot{
         top: 45%;
     }
+
+    .photo{
+        background-image: url(images/plan_de_travail_responsive.jpg);
+        background-repeat: no-repeat;
+        width: 400px;
+        height: 294px;
+        margin-top: 15.6vw;
+        margin-left: 7.6vw;
+    }
+
+    .citation{
+        background-image: url(images/dash_paint_responsive.png);
+    }
     
 }
 
