@@ -1160,6 +1160,9 @@ input::placeholder{
     .rubric_title{
         justify-content: end;
         margin-right: 2.6vw;
+        color: #fefee2;
+        filter: drop-shadow(10px 10px 10px black);
+        gap: 15px;
     }
 
     .text1, .text2, .text3, .text4{
@@ -1229,10 +1232,47 @@ input::placeholder{
         font-size: 2.5vw;
     }
 
+    .rubric2_title, .rubric3_title, .rubric_title4{
+        color: #fefee2;
+        filter: drop-shadow(10px 10px 10px black);
+        gap: 15px;
+    }
+
     .right{
         font-size: 3vw;
     }
-    
+
+    .content_contact{
+        flex-direction: column-reverse;
+    }
+
+    .right{
+        font-size: 3.5vw;
+        gap: 2rem;
+    }
+
+    .news_mail{
+        align-items: center;
+    }
+
+    #email, button{
+        font-size: 18px;
+    }
+
+    .validation{
+        width: 80vw;
+        height: 5vh;
+    }
+
+    .merejoindre{
+        text-align: center;
+    }
+
+    .social_media{
+        gap: 2vw;
+    }
+
+        
 }
 
 /*====================================================================================*/
