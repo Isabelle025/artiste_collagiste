@@ -968,10 +968,21 @@ input::placeholder{
         background-position: center;
         grid-template-rows: repeat(4,1fr);
     }
+    
+    .number{
+        font-size: 8.5vw;
+    }
+    
+    /*taille du texte du titre de la partie*/
+    .text{
+        font-size: 4vw;
+    }
 
     .rubric_title{
         justify-content: end;
         margin-right: 2.6vw;
+        color: #fefee2;
+        filter: drop-shadow(10px 10px 10px black);
     }
 
     .text1, .text2, .text3, .text4{
