@@ -1015,6 +1015,21 @@ input::placeholder{
         padding-top: 50px;
     }
 
+    .rubric2_title{
+        color: #fefee2;
+        filter: drop-shadow(10px 10px 10px black);
+    }
+    
+    /*taille du chiffre du titre de la deuxième partie*/
+    .number2{
+        font-size: 8.5vw;
+    }
+    
+    /*taille du texte du titre de la deuxième partie*/
+    .text2bis{
+        font-size: 4vw;
+    }
+
     .prevTop, .nextTop {
         font-size: 5vw;
         margin-left: 40px;
