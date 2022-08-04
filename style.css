@@ -1052,6 +1052,32 @@ input::placeholder{
         gap: 15px;
     }
 
+    .content_contact{
+        flex-direction: column-reverse;
+    }
+
+    .right{
+        font-size: 3vw;
+        gap: 2rem;
+    }
+
+    .news_mail{
+        align-items: center;
+    }
+
+    .validation{
+        width: 80vw;
+        height: 5vh;
+    }
+
+    .merejoindre{
+        text-align: center;
+    }
+
+    .social_media{
+        gap: 2vw;
+    }
+
 
 }
 
@@ -1197,6 +1223,10 @@ input::placeholder{
         background-image: url(images/dash_paint_responsive.png);
         grid-area: 3 / 2 / 5 / 7;
         font-size: 2.5vw;
+    }
+
+    .right{
+        font-size: 3vw;
     }
     
 }
