@@ -1050,6 +1050,10 @@ input::placeholder{
         flex-direction: column-reverse;
     }
 
+    .background_radius{
+        width: 42vw;
+    }
+
     .right{
         font-size: 3.5vw;
         gap: 2rem;
