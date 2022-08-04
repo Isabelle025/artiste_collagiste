@@ -1057,12 +1057,16 @@ input::placeholder{
     }
 
     .right{
-        font-size: 3vw;
+        font-size: 3.5vw;
         gap: 2rem;
     }
 
     .news_mail{
         align-items: center;
+    }
+
+    #email, button{
+        font-size: 18px;
     }
 
     .validation{
