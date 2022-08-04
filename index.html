@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="/images/LOGO.png"/>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -305,11 +306,13 @@
             <!--container principal de tout le footer-->
           <div class="content_contact">
             <!--partie gauche du footer avec le blazon-->
-          <div class="left">
-            
-            <!-- <img class="logo" src="images/LOGO.png" alt="blazon réalisé par l'artiste" viewbox="0 0 300 407"> -->
-            <!--fond flouté derrière le blazon-->
-            <div class="background_radius"></div>
+          <div class="left background_radius">
+            <picture>
+              <source media="(max-width: 768px)" srcset="images/LOGO_resp1.png">
+              <source media="(max-width: 1920px)" srcset="images/LOGO.png">
+              <img src="images/LOGO.png" alt="blazon réalisé par l'artiste" width="300" height="407">
+            </picture>
+           
           </div>
       
           <!--partie droite du footer-->

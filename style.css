@@ -698,18 +698,12 @@ button:focus{
     justify-content: center;
 }
 
-/*blazon*/
-.logo{
-    position: absolute;
-    z-index: 1;
-}
-
 /*fond flouté derrière le blazon*/
 .background_radius{
     height: 52.3vh; 
 	width: 26vw; 
     background: radial-gradient(50% 50% at 50% 50%, rgba(217, 217, 217, 0.4) 0%, rgba(217, 217, 217, 0) 100%);
-    position: relative;
+    
 }
 
 /*partie droite du footer*/
@@ -1244,6 +1238,10 @@ input::placeholder{
 
     .content_contact{
         flex-direction: column-reverse;
+    }
+
+    .background_radius{
+        width: 42vw;
     }
 
     .right{
