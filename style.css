@@ -1164,10 +1164,13 @@ input::placeholder{
         height: 294px;
         margin-top: 15.6vw;
         margin-left: 7.6vw;
+        grid-area: 1 / 1 / 4 / 4;
     }
 
     .citation{
         background-image: url(images/dash_paint_responsive.png);
+        grid-area: 3 / 2 / 5 / 7;
+        font-size: 2.5vw;
     }
     
 }
