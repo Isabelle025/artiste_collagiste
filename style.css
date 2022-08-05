@@ -1426,6 +1426,46 @@ input::placeholder{
         padding-bottom: 10px;
     }
 
+    .right{
+        font-size: 3vw;
+    }
+
+    .content_contact{
+        flex-direction: column-reverse;
+    }
+
+    .background_radius{
+        width: 42vw;
+        height: 47vh
+    }
+
+    .right{
+        font-size: 3.5vw;
+        gap: 2rem;
+    }
+
+    .news_mail{
+        align-items: center;
+    }
+
+    #email, button{
+        font-size: 18px;
+    }
+
+    .validation{
+        width: 80vw;
+        height: 5vh;
+    }
+
+    .merejoindre{
+        text-align: center;
+    }
+
+    .social_media{
+        gap: 2vw;
+    }
+
+
 }
 
 
