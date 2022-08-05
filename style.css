@@ -1448,10 +1448,6 @@ input::placeholder{
         align-items: center;
     }
 
-    #email, button{
-        font-size: 18px;
-    }
-
     .validation{
         width: 80vw;
         height: 5vh;
