@@ -16,7 +16,7 @@
 
 </head>
 <body>
-    <div container>
+    <div class="container">
       <!--menu burger-->
       <div class="menu">
         <div class="bar1"></div>
@@ -24,7 +24,7 @@
         <div class="bar3"></div>
         <div class="bar4"></div>
     </div>
-        <div header>
+        <header>
             <div id="div1">
             <!--image de fond de la page d'accueil-->
                 <div class="category_menu background_menu">
@@ -60,14 +60,14 @@
                     </div>
                 </div>
         </div>
-        </div>
+      </header>
     
         <!--premère partie biographie-->
         <div id="biography">
             <!--titre de la rubrique-->
             <div class="rubric_title">
                 <div class="number">01</div>
-                <div class="text">Biographie</div></a>
+                <div class="text">Biographie</div>
             </div>
             <!--container de la partie biographie-->
             <div class="container_biography">
@@ -286,10 +286,10 @@
         
                 <div class="buttons">
                     <button class="right-btn">
-                        <a class="prev">&#x2B63;</a>
+                        <div class="prev">&#x2B63;</div>
                     </button>
                     <button class="left-btn">
-                        <a class="next">&#11105;</a>
+                        <div class="next">&#11105;</div>
                     </button>
                 </div>
             </div>
@@ -308,10 +308,10 @@
             <!--partie gauche du footer avec le blazon-->
           <div class="left background_radius">
             <picture>
-              <source media="(max-width: 320px)" srcset="images/LOGO_resp2.png">
-              <source media="(max-width: 768px)" srcset="images/LOGO_resp1.png">
-              <source media="(max-width: 1920px)" srcset="images/LOGO.png">
-              <img src="images/LOGO.png" alt="blazon réalisé par l'artiste" width="300" height="407">
+              <source srcset="/images/LOGO_resp2.png" media="(max-width: 577px)" width="100" height="137" />
+              <source srcset="/images/LOGO_resp1.png" media="(max-width: 768px)" width="200" height="271" />
+              <source srcset="/images/LOGO.png" />
+              <img src="/images/LOGO.png" alt="blazon réalisé par l'artiste" width="300" height="407" />
             </picture>
            
           </div>
@@ -348,7 +348,8 @@
             </div>
           </div>
         </div>
-        </div>           
+      </div>           
+    </div>
         
     
 </body>
