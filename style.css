@@ -652,6 +652,128 @@ button:focus{
   color: #fefee2;
 }
 
+/* courousel expo portable */
+.carousel_responsive_container{
+    display: none;
+    width:100vw;
+    height: auto;
+}
+
+.pic-ctn2 {
+    width: 100vw;
+    height: 200px;
+  }
+  
+  @keyframes display {
+    0% {
+      transform: translateX(300px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn1 {
+    width: 100vw;
+    height: 300px;
+  }
+  
+  @keyframes animation{
+    0% {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(200px);
+      opacity: 0;
+    }
+  }
+  
+  .pic-ctn2 {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+  }
+  
+  .pic-ctn2 > img {
+    position: absolute;
+    top: 0;
+    left: calc(20% - 100px);
+    opacity: 0;
+    animation: display 10s infinite;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 6s;
+  }
+  img:nth-child(4) {
+    animation-delay: 8s;
+  }
+  img:nth-child(5) {
+    animation-delay: 10s;
+  }
+  
+  .pic-ctn1 {
+    position: relative;
+    width: 100vw;
+    height: 520px;
+    /* margin-top: 15vh; */
+  }
+  
+  .pic-ctn1 > img {
+    position: absolute;
+    top: 10;
+    left: calc(20% - 100px);
+    opacity: 0;
+    animation: animation 10s infinite;
+  }
+  
+  img:nth-child(2) {
+    animation-delay: 2s;
+  }
+  img:nth-child(3) {
+    animation-delay: 6s;
+  }
+  img:nth-child(4) {
+    animation-delay: 8s;
+  }
+  img:nth-child(5) {
+    animation-delay: 10s;
+  }
+  
+  
+
+
+
 /*====================================================================================*/
 /*footer*/
 #footer{
@@ -1234,6 +1356,14 @@ input::placeholder{
         color: #fefee2;
         filter: drop-shadow(10px 10px 10px black);
         gap: 15px;
+    }
+
+    .container_expo{
+        display: none;
+    }
+
+    .carousel_responsive_container{
+        display: block;
     }
 
     .right{

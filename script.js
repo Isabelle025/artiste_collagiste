@@ -134,6 +134,7 @@ for (let dot of dots){
   currentSlide(avance)});
 };
 
+
 //========================================================================================//
 //changement des couleurs titres rubriques en hover de la rubrique1//
 const rubric1 = document.querySelector('.rubric1');
