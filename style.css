@@ -13,6 +13,7 @@ html{
     width: 100vw;
     height: 100vh;
     background-color: #2b2727;
+    overflow-x: hidden;
 }
 
 header{
@@ -656,7 +657,7 @@ button:focus{
 .carousel_responsive_container{
     display: none;
     width:100vw;
-    height: auto;
+    height: 100vh;
 }
 
 .pic-ctn2 {
@@ -723,8 +724,9 @@ button:focus{
   
   .pic-ctn2 > img {
     position: absolute;
-    top: 0;
-    left: calc(20% - 100px);
+    top: 17.8125rem;
+    /* left: calc(20% - 100px); */
+    width: calc(100% - 0px);
     opacity: 0;
     animation: display 10s infinite;
   }
@@ -752,7 +754,8 @@ button:focus{
   .pic-ctn1 > img {
     position: absolute;
     top: 10;
-    left: calc(20% - 100px);
+    /* left: calc(20% - 100px); */
+    width: calc(100% - 0px);
     opacity: 0;
     animation: animation 10s infinite;
   }
@@ -773,7 +776,6 @@ button:focus{
 /*====================================================================================*/
 /*footer*/
 #footer{
-    background-color: #2b2b2b;
     width: 100%;
     height: 100%;
 }
@@ -847,6 +849,7 @@ button:focus{
     height: 2.5rem; 
     display: flex;
     justify-content: space-between;
+    width: 18.75rem;
 }
 
 /*partie de la barre dans laquelle on saisit le mail*/
@@ -895,9 +898,9 @@ input::placeholder{
 .social_media{
     display: flex;
     flex-direction: row;
-    gap: 0.5vw;
+    gap: 15px;
     cursor: pointer;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     overflow: hidden;
     height: 66px;
@@ -996,6 +999,7 @@ input::placeholder{
 .deviant_art > :hover > img{
     top: 37px;
 }
+
 
 /*=====================================================================================*/
 /*responsive tablet*/
@@ -1591,6 +1595,604 @@ input::placeholder{
 }
 
 
+/*=====================================================================================*/
+/*responsive tablet*/
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+    /*header*/
+    #div1{
+        background-image: url(images/background_responsive.png);
+    }
+
+    .name{
+        padding-left: 50px;
+    }
+
+    h1{
+        font-size: 6vw;
+    }
+
+    .subtitle1, .subtitle2{
+        font-size: 3vw;
+    }
+
+    /*menu burger*/
+    .bar1{
+        height: 0.3vh;
+    }
+
+    .bar2{
+        height: 0.4vh;
+    }
+
+    .bar3{
+        height: 0.3vh;
+    }
+
+    .bar4{
+        height: 0.4vh;
+    }
+
+    /*catégories menu de navigation*/
+    .rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 15vh;
+    }
+
+    .rubric1{
+        background-image: url(images/survol_vert.png);  
+    }
+
+    .catbio1, .catbio2{
+        color: #e9940b;
+    }
+
+    .rubric2{
+        background-image: url(images/brush_red.png);
+    }
+
+    .rubric3{
+        background-image: url(images/brush_violet\ 1.png);
+    }
+
+    .catbio5, .catbio6{
+        color: #fefee2;
+    }
+
+    .rubric4{
+        background-image: url(images/brush_black.png);
+    }
+
+    .catbio7, .catbio8{
+        color: #177026;
+    }
+
+    .rubric5{
+        background-image: url(images/brush_red.png);
+    }
+
+    /*première partie biographie*/
+    .container_biography{
+        background-image: url(images/bio_responsive.png);
+        background-position: center;
+        grid-template-rows: repeat(4,1fr);
+    }
+    
+    .number, .number2, .number3, .nb4{
+        font-size: 8.5vw;
+    }
+    
+    /*taille du texte du titre de la partie*/
+    .text, .text2bis, .text3bis, .text4bis{
+        font-size: 4vw;
+    }
+
+    .rubric_title{
+        justify-content: end;
+        margin-right: 2.6vw;
+        color: #fefee2;
+        filter: drop-shadow(10px 10px 10px black);
+        gap: 15px;
+    }
+
+    .text1, .text2, .text3, .text4{
+        font-size: 2vw;
+        /*rendre le texte visible*/
+        display: block;
+    }
+
+    .birth{
+        grid-area:  1 / 1 / 3 / 4;  
+    }
+    
+    /*emplacement du bloc avec la deuxième date dans la grid*/
+    .beginning{
+        grid-area: 2/ 3 / 4 / 6;
+    }
+    
+    /*emplacement du bloc avec la troisième date dans la grid*/
+    .glory{
+        grid-area: 3 / 2 / 5 / 4; 
+    }
+    
+    /*emplacement du bloc avec la dernière date dans la grid*/
+    .death{
+        grid-area: 4 / 4 / 6 / 6;
+    }
+
+    /*2ème partie gallerie*/
+    #gallery{
+        padding-top: 50px;
+    }
+    
+    /*taille du chiffre du titre de la deuxième partie*/
+    .prevTop, .nextTop {
+        font-size: 5vw;
+        margin-left: 40px;
+    }
+
+    .image_info{
+        height: 11vh;
+        width: 33vw;
+    } 
+
+    .image_title{
+        font-size: 3vw;
+    }
+
+    .image_date{
+        font-size: 2.5vw;
+    }
+
+    .photo{
+        width: 500px;
+        height: 367px;
+    }
+
+    .citation{
+        padding-bottom: 2.6vw;
+        font-size: 2vw;
+        background-image: url(images/dash_paint_responsive.png);
+    }
+
+    .rubric2_title, .rubric3_title, .rubric_title4{
+        color: #fefee2;
+        filter: drop-shadow(10px 10px 10px black);
+        gap: 15px;
+    }
+
+    .content_contact{
+        flex-direction: column-reverse;
+    }
+
+    .background_radius{
+        width: 42vw;
+    }
+
+    .right{
+        font-size: 3.5vw;
+        gap: 2rem;
+    }
+
+    .news_mail{
+        align-items: center;
+    }
+
+    #email, button{
+        font-size: 18px;
+    }
+
+    .validation{
+        width: 80vw;
+        height: 5vh;
+    }
+
+    .merejoindre{
+        text-align: center;
+    }
+
+    .social_media{
+        gap: 2vw;
+    }
+
+
+}
+
+/*===============================================================================*/
+@media screen and (min-width: 578px) and (max-width: 768px){
+    #div1{
+        background-image: url(images/background_responsive.png);
+        background-position: bottom right;
+    }
+
+    .name{
+        padding-left: 40px;
+    }
+    
+    .subtitle1, .subtitle2{
+        font-size: 2.5vw;  
+    }
+
+    .bar2{
+        height: 0.3vh;
+    }
+
+    .bar4{
+        height: 0.3vh;
+    }
+    
+    .category, .accueil{
+        font-size: 4vw;
+    }
+
+    .rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 15vh;
+    }
+
+    .rubric1{
+        background-image: url(images/survol_vert.png);  
+    }
+
+    .catbio1, .catbio2{
+        color: #e9940b;
+    }
+
+    .rubric2{
+        background-image: url(images/brush_red.png);
+    }
+
+    .rubric3{
+        background-image: url(images/brush_violet\ 1.png);
+    }
+
+    .catbio5, .catbio6{
+        color: #fefee2;
+    }
+
+    .rubric4{
+        background-image: url(images/brush_black.png);
+    }
+
+    .catbio7, .catbio8{
+        color: #177026;
+    }
+
+    .rubric5{
+        background-image: url(images/brush_red.png);
+    }
+
+    .container_biography{
+        background-image: url(images/bio_responsive.png);
+        background-position: center;
+        grid-template-rows: repeat(4,1fr);
+        margin-top: 20px;
+    }
+
+    .rubric_title{
+        justify-content: end;
+        margin-right: 2.6vw;
+        color: #fefee2;
+        filter: drop-shadow(10px 10px 10px black);
+        gap: 15px;
+    }
+
+    .text1, .text2, .text3, .text4{
+        font-size: 2vw;
+        /*rendre le texte visible*/
+        display: block;
+    }
+
+    .birth{
+        grid-area:  1 / 1 / 3 / 3;  
+    }
+    
+    /*emplacement du bloc avec la deuxième date dans la grid*/
+    .beginning{
+        grid-area: 2/ 3 / 4 / 6;
+    }
+    
+    /*emplacement du bloc avec la troisième date dans la grid*/
+    .glory{
+        grid-area: 3 / 2 / 6 / 4; 
+    }
+    
+    /*emplacement du bloc avec la dernière date dans la grid*/
+    .death{
+        grid-area: 4 / 3 / 6 / 5;
+    }
+
+    /*2ème partie gallerie*/
+    #gallery{
+        padding-top: 50px;
+    }
+
+    .prevTop, .nextTop {
+        font-size: 5vw;
+        margin-left: 30px;
+    }
+
+    .image_info{
+        height: 13vh;
+    } 
+
+    .image_title{
+        font-size: 3.5vw;
+    }
+
+    .image_date{
+        font-size: 3vw;
+    }
+
+    .slide-dot{
+        top: 45%;
+    }
+
+    .photo{
+        background-image: url(images/plan_de_travail_responsive.jpg);
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 368px;
+        margin-top: 15.6vw;
+        margin-left: 7.6vw;
+        grid-area: 1 / 1 / 4 / 4;
+    }
+
+    .citation{
+        background-image: url(images/dash_paint_responsive.png);
+        grid-area: 3 / 2 / 5 / 7;
+        font-size: 2.5vw;
+    }
+
+    .rubric2_title, .rubric3_title, .rubric_title4{
+        color: #fefee2;
+        filter: drop-shadow(10px 10px 10px black);
+        gap: 15px;
+    }
+
+    .container_expo{
+        display: none;
+    }
+    
+    #events{
+        height: 1500px;
+    }
+
+    .carousel_responsive_container{
+        display: block;
+    }
+
+    .right{
+        font-size: 3vw;
+    }
+
+    .content_contact{
+        flex-direction: column-reverse;
+    }
+
+    .background_radius{
+        width: 42vw;
+        height: 47vh
+    }
+
+    .right{
+        font-size: 3.5vw;
+        gap: 2rem;
+    }
+
+    .news_mail{
+        align-items: center;
+    }
+
+    #email, button{
+        font-size: 18px;
+    }
+
+    .validation{
+        width: 80vw;
+        height: 5vh;
+    }
+
+    .merejoindre{
+        text-align: center;
+    }
+
+    .social_media{
+        gap: 2vw;
+    }
+
+        
+}
+
+/*====================================================================================*/
+@media screen and (min-width: 320px) and (max-width: 577px){
+    #div1{
+        background-image: url(images/background_responsive.png);
+        background-size: cover;
+    }
+
+    .name{
+        padding-left: 30px;
+    }
+
+    h1{
+        font-size: 7vw;
+    }
+
+    .subtitle1, .subtitle2{
+        font-size: 4vw;  
+    }
+
+    .bar1{
+        height: 0.32vh;
+        width: 6vw;
+    }
+
+    .bar2{
+        height: 0.4vh;
+        width: 5vw;
+    }
+
+    .bar3{
+        height: 0.4vh;
+        width: 7vw;
+    }
+
+    .bar4{
+        height: 0.5vh;
+        width: 4vw;
+    }
+
+    .rubric1, .rubric2, .rubric3, .rubric4, .rubric5{
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 10vh;
+    }
+
+    .rubric1{
+        background-image: url(images/survol_vert.png);  
+    }
+
+    .catbio1, .catbio3, .catbio5, .catbio7{
+        font-size: 8.2vw;
+    }
+
+    .catbio1, .catbio2{
+        color: #e9940b;
+    }
+
+    .catbio2, .catbio4, .catbio6, .catbio8{
+        font-size: 5vw;
+    }
+
+    .rubric2{
+        background-image: url(images/brush_red.png);
+        grid-area: 4 / 5 / 6 / 9;
+    }
+
+    .rubric3{
+        background-image: url(images/brush_violet\ 1.png);
+    }
+
+    .rubric4{
+        background-image: url(images/brush_black.png);
+    }
+
+    .catbio5, .catbio6{
+        color: #fefee2;
+    }
+
+    .catbio7, .catbio8{
+        color: #177026;
+    }
+
+    .rubric5{
+        background-image: url(images/brush_red.png);
+    }
+
+    .accueil{
+        font-size: 5vw;
+    }
+
+    .container_biography{
+        background-image: url(images/bio_responsive.png);
+        background-position: right;
+        grid-template-rows: repeat(4,1fr);
+        margin-top: 20px;
+    }
+
+    .rubric_title{
+        justify-content: end;
+        margin-right: 2.6vw;
+    }
+
+    .text1, .text2, .text3, .text4{
+        font-size: 2vw;
+        /*rendre le texte visible*/
+        display: block;
+    }
+
+    .birth{
+        grid-area:  1 / 1 / 3 / 4;  
+    }
+    
+    /*emplacement du bloc avec la deuxième date dans la grid*/
+    .beginning{
+        grid-area: 2/ 2 / 3 / 5;
+    }
+    
+    /*emplacement du bloc avec la troisième date dans la grid*/
+    .glory{
+        grid-area: 3 / 2 / 6 / 4; 
+    }
+    
+    /*emplacement du bloc avec la dernière date dans la grid*/
+    .death{
+        grid-area: 4 / 4 / 6 / 6;
+    }
+
+    #gallery{
+        padding-top: 50px;
+    }
+
+    .photo{
+        background-image: url(images/plan_de_travail_responsive2.jpg);
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 221px;
+        margin-top: 15.6vw;
+        margin-left: 3vw;
+        grid-area: 1 / 1 / 4 / 4;
+    }
+
+    .citation{
+        background-image: url(images/dash_paint_responsive2.png);
+        grid-area: 3 / 2 / 5 / 6;
+        font-size: 3vw;
+        padding-bottom: 10px;
+    }
+
+    .right{
+        font-size: 3vw;
+    }
+
+    .content_contact{
+        flex-direction: column-reverse;
+    }
+
+    .background_radius{
+        width: 42vw;
+        height: 47vh
+    }
+
+    .right{
+        font-size: 3.5vw;
+        gap: 2rem;
+    }
+
+    .news_mail{
+        align-items: center;
+    }
+
+    .validation{
+        width: 80vw;
+        height: 5vh;
+    }
+
+    .merejoindre{
+        text-align: center;
+    }
+
+    .social_media{
+        gap: 2vw;
+    }
+
+
+}
+
+
 
    
     
@@ -1603,3 +2205,4 @@ input::placeholder{
 
 
     
+
