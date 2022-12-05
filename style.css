@@ -108,7 +108,7 @@ header{
 /*survol de la rubrique événements*/
 .rubric3:hover{
     background-image: url(images/brush_violet\ 1.png);
-    background-size: contain;
+    background-size: cover;
 }
 
 /*emplacement de la rubrique contact dans la grid*/
