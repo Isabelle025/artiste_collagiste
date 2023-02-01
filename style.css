@@ -1209,10 +1209,14 @@ input::placeholder{
     #div1{
         background-image: url(images/background_responsive.png);
         background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
     }
 
     .name{
         padding-left: 30px;
+        grid-column: 1 / 3;
+        grid-row: 2;
     }
 
     h1{
