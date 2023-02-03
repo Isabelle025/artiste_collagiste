@@ -1213,6 +1213,10 @@ input::placeholder{
         grid-template-columns: repeat(1, 3fr);
     }
 
+    header{
+        height: 100vh;
+    }
+
     .name{
         padding-left: 30px;
         grid-column: 1 / 3;
