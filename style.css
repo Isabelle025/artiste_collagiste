@@ -381,8 +381,8 @@ h1{
     flex-direction: column;
     background-color: rgba(43, 39, 39,75%);
     border-radius: 25px;
-    height: 16.5vh;
-    width: 37.5vw;
+    height: 10%;
+    width: 40%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -419,6 +419,7 @@ h1{
     object-fit: cover;
     position: relative;
     display: flex;
+    height: 100vh;
 }
 
 /*barre vertical pour défilement du carrousel*/
@@ -1134,6 +1135,10 @@ input::placeholder{
         margin-left: 40px;
     }
 
+    .image{
+        height: 100%;
+    }
+
     .image_info{
         height: 11vh;
         width: 33vw;
@@ -1340,6 +1345,10 @@ input::placeholder{
         padding-top: 50px;
     }
 
+    .image{
+        height: 100%;
+    }
+
     .photo{
         background-image: url(images/plan_de_travail_responsive2.jpg);
         background-repeat: no-repeat;
@@ -1499,6 +1508,10 @@ input::placeholder{
     /*emplacement du bloc avec la dernière date dans la grid*/
     .death{
         grid-area: 4 / 3 / 6 / 5;
+    }
+
+    .image{
+        height: 100%;
     }
 
     /*2ème partie gallerie*/
