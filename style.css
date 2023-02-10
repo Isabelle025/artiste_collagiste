@@ -339,7 +339,6 @@ h1{
 }
 
 .carousel_oeuvres {
-    max-height: 100vh;
     position: relative;
     overflow-x: hidden;
 }
