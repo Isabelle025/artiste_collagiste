@@ -654,7 +654,7 @@ button:focus{
 .carousel_responsive_container{
     display: none;
     width:100vw;
-    height: 100vh;
+    height: 200vh;
 }
 
 .pic-ctn2 {
