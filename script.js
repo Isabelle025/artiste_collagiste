@@ -101,9 +101,7 @@ function changeSlide(btn) {
     }
   }
 
-  rightSlide.style.transform = `translateY(-${
-    (slidesLength - 1 - currentSlideBottom) * 100
-  }%)`;
+  rightSlide.style.transform = `translateY(-${(slidesLength - 1 - currentSlideBottom) * 100 }%)`;
   leftSlide.style.transform = `translateY(-${currentSlideBottom * 100}%)`;
 }
 
