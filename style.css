@@ -288,7 +288,7 @@ h1{
 
 /*emplacement du bloc avec la deuxième date dans la grid*/
 .beginning{
-    grid-area: 4 / 2 / 6 / 3;
+    grid-area: 4 / 2 / 6 / 4;
 }
 
 /*emplacement du bloc avec la troisième date dans la grid*/
