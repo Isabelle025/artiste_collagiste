@@ -381,7 +381,7 @@ h1{
     flex-direction: column;
     background-color: rgba(43, 39, 39,75%);
     border-radius: 25px;
-    height: 10%;
+    height: 18%;
     width: 40%;
     position: absolute;
     bottom: 0;
@@ -832,6 +832,7 @@ button:focus{
     display: flex;
     flex-direction: column;
     gap: 4.375rem;
+    width: 30%;
 }
 
 /*partie en haut à droite avec la newsletter*/
@@ -846,7 +847,7 @@ button:focus{
     height: 2.5rem; 
     display: flex;
     justify-content: space-between;
-    width: 18.75rem;
+    width: 100%;
 }
 
 /*partie de la barre dans laquelle on saisit le mail*/
